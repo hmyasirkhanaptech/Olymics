@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Olyamics News</title>
+</head>
+<body>
+    <!-- section home-Start -->
+  <section id="home">
+    <header class="">
+      <nav class="navbar navbar-expand-md bg fixed-top">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg"
+              alt="Olympics Logo">
+          </div>
+
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon" style="color: black;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item  ms-3">
+
+                
+                <a class="nav-link text-black d-none d-md-block " href="index.html#home">Home</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="./News.html">News</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="file:///C:/Users/test/Desktop/olympics%20website%20-%20Copy/athlete.html">Athelets</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="file:///C:/Users/test/Desktop/olympics%20website%20-%20Copy/bsindex.html">Games</a>
+              </li>
+              <!-- <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="#athletes">Athletes</a>
+              </li> -->
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="../HTML/FAQs.html">FAQs</a>
+              </li>
+              <!-- <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="#gallery">Gallery</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#athletes">Side Map</a></li>
+                  <li><a class="dropdown-item" href="./index.html#gallery">Gallery</a></li>
+                  <li><a class="dropdown-item" href="./index.html#about">About Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item  ms-5">
+                <div class="mode-button">
+                  <button class="bg-dark d-block " style="width: 43px;height: 20px; margin-top: -2px;"
+                    onclick="darkmode()" type="button"></button>
+                  <button class="bg-white d-block " style="width: 43px;height: 20px; border: 1px solid white;"
+                    onclick="lightmode()" type="button"></button>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <form class="d-flex ">
+              <input class="form-control me-2 s-input" type="text" placeholder="Search">
+              <button class="btn fas fa-search" id="s-button" onclick="showinput()" type="button"></button>
+            </form>
+
+            <button type="button" class="btn btn-primary"><a href="../olympics website - Copy/home.html" class="text-white">Sign In</a></button>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="news" class="news">
+        <div class="container">
+          <h1>News</h1>
+          
+          <div id="news-container">
+              <!-- News articles will be loaded here -->
+          </div>
+      </div>
+      </section>
+       <!-- footer start -->
+  <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+
+    <div class="container text-center text-md-left">
+
+      <div class="row text-center text-md-left">
+
+        <div class="col-md-3 col-lg-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company Name</h5>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg"
+              alt="Olympics Logo">
+
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Explore</h5>
+          <p><a href="#athletes" class="text-white" style="text-decoration: none;">Athletes</a></p>
+          <p><a href="#games" class="text-white" style="text-decoration: none; ">Olympic Games</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">Olympic Movement</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">TOP</a></p>
+
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Media</h5>
+          <p><a href="#news" class="text-white" style="text-decoration: none;">News</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">Statements</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">Subscribe to press <br>releases</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Information</h5>
+          <p><a href="" class="text-white" style="text-decoration: none;">FAQs</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">Documents</a></p>
+          <p><a href="#about" class="text-white" style="text-decoration: none;">About us</a></p>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right d-flex">
+
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        function showinput() {
+    var inputsearch =document.querySelector('.s-input')
+    // inputsearch.className = 's-inputhover'
+    inputsearch.style.display = 'block'
+    inputsearch.style.width = '300px'
+    
+       
+
+}
+
+
+
+
+
+        const newData = {
+  "status": "ok",
+  "totalResults": 2632,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Anna Thompson",
+      "title": "From chance trial to one of GB's best bobsleighers",
+      "description": "Taylor Lawrence on his meteoric rise as part of GB's highly successful bobsleigh squad, as they eye a first Winter Olympics gold medal since 1964.",
+      "url": "https://www.bbc.com/sport/articles/cj6ej8deyk3o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/003b/live/854879f0-8f06-11ef-a296-53903305839d.jpg",
+      "publishedAt": "2024-10-23T06:09:55Z",
+      "content": "The four-man crew finished sixth in the Beijing Olympics in 2022, which was the best result of all the Team GB skeleton and bobsleigh teams who endured a tough Games.\r\nWhen he first joined the squad … [+1692 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Polly Thompson",
+      "title": "Coke Zero sales jump, helping Coca-Cola beat forecasts despite revenue dip",
+      "description": "Coca-Cola also signaled in its third quarter results that it will look to non-fizzy drinks as a growth area after success at the Paris Olympics.",
+      "url": "https://www.businessinsider.com/coca-cola-coke-zero-earnings-revenues-fall-beat-analyst-expectations-2024-10",
+      "urlToImage": "https://i.insider.com/6718c5a79b3250dbbce958b2?width=1200&format=jpeg",
+      "publishedAt": "2024-10-23T13:05:28Z",
+      "content": "Coke Zero sales are rising for Coca-Cola.Coca-Cola\r\n\u003Cul\u003E\u003Cli\u003ECoca-Cola reported a decline in revenues in its third-quarter earnings on Wednesday.\u003C/li\u003E\u003Cli\u003EDespite the slide, revenue was higher than ana… [+3014 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "Cavendish wins final race of career",
+      "description": "Britain's Mark Cavendish, the most successful sprinter in cycling history, ends his career with victory in the Tour de France Criterium in Singapore.",
+      "url": "https://www.bbc.com/sport/cycling/articles/c624l7p7z5vo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/82c4/live/d6510f40-9f3e-11ef-9b00-c9943d5830bc.jpg",
+      "publishedAt": "2024-11-10T09:52:38Z",
+      "content": "Britain's Mark Cavendish, the most successful sprinter in cycling history, ended his career with victory in the Tour de France Criterium in Singapore.\r\nThe 39-year-old from the Isle of Man, who said … [+981 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "Scott beats Marchand to World Cup 200m free title",
+      "description": "Great Britain's Duncan Scott beats France's Olympic star Leon Marchand to win the men's 200m freestyle at the short course World Cup.",
+      "url": "https://www.bbc.com/sport/swimming/articles/c75ldn0v32po",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/c4f7/live/cbbda0e0-9915-11ef-b6c6-b3dde995f5d4.jpg",
+      "publishedAt": "2024-11-02T13:09:21Z",
+      "content": "Great Britain's Duncan Scott beat France's multiple world and Olympic champion Leon Marchand into second place in the men's 200m freestyle on the final day of the short course World Cup event in Sing… [+1060 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Mikhaila Friel",
+      "title": "Raygun gives surprise performance of her viral Olympics moves days after announcing her retirement",
+      "description": "Raygun, whose real name is Rachael Gunn, appeared onstage with Australian singer Tones and I at a concert in Melbourne.",
+      "url": "https://www.businessinsider.com/raygun-performs-viral-olympics-routine-onstage-after-retirement-2024-11",
+      "urlToImage": "https://i.insider.com/67308f1e5ec9bfa3d63cf812?width=1200&format=jpeg",
+      "publishedAt": "2024-11-10T12:04:11Z",
+      "content": "Raygun performed at a concert in Australia after announcing her retirement.Elsa/Getty Images\r\n\u003Cul\u003E\u003Cli\u003ERaygun performed with Australian star Tones and I after announcing her retirement.\u003C/li\u003E\u003Cli\u003ERachae… [+2357 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Katie Falkingham",
+      "title": "Archibald 'happier on the bike' after freak injury",
+      "description": "Katie Archibald says she feels \"happier on the bike\" ahead of her comeback from a freak injury at the track cycling World Championships.",
+      "url": "https://www.bbc.com/sport/cycling/articles/c17l22dwyw8o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/dfe9/live/2473e590-886e-11ef-a3b8-8719d0f096f5.jpg",
+      "publishedAt": "2024-10-15T17:01:00Z",
+      "content": "It took a freak injury and a missed Olympic Games for Katie Archibald to feel \"happier on the bike\" than she has in a long time.\r\nIt is a magical statement to hear from a rider for who the past few y… [+1482 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "Nadal 'emotionally ready' for Davis Cup farewell",
+      "description": "Rafael Nadal says he feels emotionally prepared for ending his career at next month's Davis Cup Finals but the Spaniard will only contest the singles if he is \"ready to win\".",
+      "url": "https://www.bbc.com/sport/tennis/articles/cp8mg2y1x3jo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/ae88/live/218ab6e0-8d25-11ef-8618-49566d41575a.jpg",
+      "publishedAt": "2024-10-18T08:31:36Z",
+      "content": "Rafael Nadal says he feels emotionally prepared for ending his career at next month's Davis Cup Finals but the Spaniard will only contest the singles if he is \"ready to win\".\r\nThe 22-time Grand Slam … [+2061 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Polly Thompson",
+      "title": "Europe's busiest airport reported a record-breaking summer, boosted by Americans flying in to watch Taylor Swift and the Olympics",
+      "description": "Thousands of American tourists flew to Europe over the summer in a phenomenon dubbed \"tour tourism\" by travel group Expedia.",
+      "url": "https://www.businessinsider.com/taylor-swift-olympics-impact-heathrow-airport-raises-annual-passenger-forecasts-2024-10",
+      "urlToImage": "https://i.insider.com/6718b5fb01ea6d83dee35565?width=1200&format=jpeg",
+      "publishedAt": "2024-10-23T10:02:32Z",
+      "content": "Reuters\r\n\u003Cul\u003E\u003Cli\u003ELondon's Heathrow Airport said it had a \"super summer\" for passenger traffic.\u003C/li\u003E\u003Cli\u003EEurope's busiest airport said musicians like Taylor Swift and the Olympics had boosted footfall.… [+2600 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Jeff Kassouf",
+      "title": "Olympics are over, World Cup is in three years: What questions must USWNT answer now?",
+      "description": "The USWNT just won gold at the Olympics, sure, but a new cycle begins with a friendly against Iceland, and the USWNT has question marks ahead of the 2027 World Cup.",
+      "url": "https://www.espn.com/soccer/story/_/id/41964944/uswnt-top-questions-2027-womens-world-cup",
+      "urlToImage": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0722%2Fr1361543_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-10-24T12:21:23Z",
+      "content": "Oct 24, 2024, 07:30 AM ET\r\nThe Emma Hayes era of the U.S. women's national team got off to a fairytale start this summer, when the Americans returned to the top of the podium in Paris for the program… [+11429 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Record-breaking runner stars in New York Marathon",
+      "description": "Lloyd Martin, who has Down's syndrome, runs the New York Marathon after a record-breaking London run.",
+      "url": "https://www.bbc.com/news/articles/c774dnklereo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/d6df/live/065273e0-9eb9-11ef-913b-11aa6a75fea1.jpg",
+      "publishedAt": "2024-11-09T18:07:11Z",
+      "content": "Lloyd Martin has completed the New York marathon, just months after completing his first one in London earlier this year \r\nA runner with Down's syndrome - who gained a world record at his first marat… [+2911 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": "KIAH - Houston",
+      "title": "75th Annual H-E-B Thanksgiving Day Parade",
+      "description": "Houston (KIAH) -- Are you looking for some fun this Thanksgiving? The 75th Annual H-E-B Thanksgiving Day Parade will take place on Thursday, November 28...",
+      "url": "https://www.yahoo.com/news/75th-annual-h-e-b-154000601.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/YM9uSo6aG_MCzXgzJ_wb4A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/kiah_houston_172/04e1b1e84a55bb82d31a929dc0d90846",
+      "publishedAt": "2024-10-28T15:40:00Z",
+      "content": "Mon, October 28, 2024 at 3:40 PM UTC\r\nHouston (KIAH) -- Are you looking for some fun this Thanksgiving? The 75th Annual H-E-B Thanksgiving Day Parade will take place on Thursday, November 28, 2024, a… [+414 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rolling Stone"
+      },
+      "author": "Tomás Mier",
+      "title": "Olympics Star Raygun Isn’t Actually Retiring from Breakdancing: ‘You Try and Stop Me’",
+      "description": "Raygun, who went viral at the 2024 Olympics, said she wasn't going to ever retire from the sport after making headlines for an interview last week.",
+      "url": "http://www.rollingstone.com/culture/culture-news/olympic-breakdancer-raygun-not-retiring-from-breakdancing-1235162329/",
+      "urlToImage": "https://www.rollingstone.com/wp-content/uploads/2024/11/raygun-continue-dancing.jpg?crop=63px%2C257px%2C1632px%2C919px&resize=1600%2C900",
+      "publishedAt": "2024-11-11T21:55:13Z",
+      "content": "Don’t count her out just yet! After making headlines last week for saying she was planning to step away from competing, viral breakdancer Rachael “Raygun” Gunn clarified Monday that she isn’t ready t… [+2191 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "The Associated Press",
+      "title": "A Canadian former Olympic snowboarder is wanted in a U.S. drug trafficking case",
+      "description": "A former Olympic snowboarder for Canada has been charged with running a drug trafficking ring that shipped vast amounts of cocaine across the Americas and killed four people, authorities said.",
+      "url": "https://www.npr.org/2024/10/18/g-s1-28859/canadian-olympic-snowboarder-wanted-drug-trafficking",
+      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4192x2358+0+219/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fca%2F1d%2Fbb11733149a1ad41c4664f9cfe64%2Fap24291692488728.jpg",
+      "publishedAt": "2024-10-18T09:21:12Z",
+      "content": "LOS ANGELES A former Olympic snowboarder for Canada has been charged with running a drug trafficking ring that shipped vast amounts of cocaine across the Americas and killed four people, authorities … [+2080 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Fortnum & Mason party snub was hurtful, Paralympian says",
+      "description": "The London high-end grocer has apologised over failure to host Paralympic athletes alongside Team GB Olympians at event",
+      "url": "https://www.bbc.com/news/articles/cj0j7qzn2rpo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/f897/live/b6d09a20-9edd-11ef-bf6a-ed7bb89e9144.jpg",
+      "publishedAt": "2024-11-09T21:17:00Z",
+      "content": "Zac Shaw with his partner and fellow Paralympic sprinter, Ali Smith, at the reception at Buckingham Palace on Thursday\r\nParalympians have criticised the decision by Fortnum &amp; Mason to hold an eve… [+4537 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Emergency staff who die in line of duty honoured with new award",
+      "description": "The first batch of Elizabeth Emblems will be given to relatives by King Charles later this year.",
+      "url": "https://www.bbc.com/news/articles/ce31jgjel81o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/18c3/live/254cd680-9e11-11ef-8f23-475e175d7eec.jpg",
+      "publishedAt": "2024-11-09T00:32:26Z",
+      "content": "Bryn Hughes campaigned for emergency workers following the murder of his daughter, Nicola\r\nThe first recipients of an award for emergency service workers who die in the line of duty have been announc… [+4636 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Stereogum"
+      },
+      "author": "Chris DeVille",
+      "title": "Raygun Breakdances At Tones And I’s Melbourne Show, NFL’s Camryn Bynum Reenacts Her Viral Olympic Routine After Interception",
+      "description": "Raygun, the Australian breakdancer who went viral for her embarrassing display at the Olympics, announced last week that she’s retiring from competitive breaking. But that apparently does not mean she will no longer breakdance in public.",
+      "url": "https://www.stereogum.com/2286981/tones-and-i-brought-out-raygun-in-melbourne/news/",
+      "urlToImage": "https://static.stereogum.com/uploads/2024/11/Raygun-1731334346.png",
+      "publishedAt": "2024-11-11T14:29:45Z",
+      "content": "Raygun, the Australian breakdancer who went viral for her embarrassing display at the Olympics, announced last week that she’s retiring from competitive breaking. But that apparently does not mean sh… [+1317 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Timothy Abraham",
+      "title": "Canada staff 'objected' to drone use before Olympics",
+      "description": "Members of Canada women's coaching staff \"objected\" to flying drones over training sessions before the scandal at Paris 2024.",
+      "url": "https://www.bbc.com/sport/football/articles/cg57m799e8go",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/56db/live/2ab3fe40-a141-11ef-accd-1951fe8cd98c.jpg",
+      "publishedAt": "2024-11-12T22:52:31Z",
+      "content": "Members of Canada women's coaching staff \"objected\" to requests to fly drones over opposition training sessions in the two years before the scandal which engulfed the team at Paris 2024.\r\nAn independ… [+1970 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Uncrate.com"
+      },
+      "author": "Uncrate",
+      "title": "LeBron XXII Crown Jewel Basketball Shoes",
+      "description": "21 years in the league. 39 years old. LeBron James isn't slowing down. James debuted the LeBron 22 over the summer with Team USA during the 2024 Summer Olympics in Paris, helping Team USA take home its fifth straight gold...",
+      "url": "https://uncrate.com/lebron-xxii-crown-jewel-basketball-shoes/",
+      "urlToImage": "https://uncrate.com/p/2024/10/lebron-xxii-crown-jewel-1.jpg",
+      "publishedAt": "2024-10-18T18:00:00Z",
+      "content": "Make hitting fitness goals and living a healthier lifestyle simple with the Simple app. Simple isn't a restrictive list of do's and don'ts. Using AI and a team of nutritional, behavioral, and medical… [+504 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNET"
+      },
+      "author": "Aaron Pruner",
+      "title": "Disney Raises Prices for Disney Plus, Hulu, and ESPN Plus Again",
+      "description": "Your Disney streaming subscriptions will increase again. Here's what to expect to see on your next bill.",
+      "url": "https://www.cnet.com/tech/services-and-software/disney-raises-prices-for-disney-plus-hulu-and-espn-plus-again/",
+      "urlToImage": "https://www.cnet.com/a/img/resize/c33f638c5fac6d9880707421fc71f8f3a8a2b65a/hub/2024/04/17/54a9c706-19e8-4e2d-81c1-ab5d7da00242/disney-plus-streaming-tv-movies-9221.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "publishedAt": "2024-10-18T09:00:00Z",
+      "content": "Disney has raised the prices of its streaming plans, only a year after their last round of price hikes. The Mouse House announced the latest cost increase for most of its streaming plans in August; t… [+2503 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNET"
+      },
+      "author": "Aaron Pruner",
+      "title": "Disney's Price Hikes Have Arrived: Here's What You Need to Know",
+      "description": "Disney Plus, ESPN and Hulu subscriptions have just become more expensive.",
+      "url": "https://www.cnet.com/tech/services-and-software/disney-price-hike-what-you-need-to-know/",
+      "urlToImage": "https://www.cnet.com/a/img/resize/c33f638c5fac6d9880707421fc71f8f3a8a2b65a/hub/2024/04/17/54a9c706-19e8-4e2d-81c1-ab5d7da00242/disney-plus-streaming-tv-movies-9221.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "publishedAt": "2024-10-17T14:00:00Z",
+      "content": "Disney's price hikes have arrived. The Mouse House initially announced the cost increase for most of its streaming plans in August. That change took effect Thursday, marking nearly a year since the m… [+2535 chars]"
+    },
+    {
+      "source": {
+        "id": "time",
+        "name": "Time"
+      },
+      "author": "Simmone Shah",
+      "title": "These Are the Most Popular Halloween Costumes of 2024",
+      "description": "The top 10 Halloween costume searches for 2024, according to Google, including Beetlejuice Beetlejuice characters and an Olympian.",
+      "url": "https://time.com/7093652/halloween-2024-popular-costumes/",
+      "urlToImage": "https://api.time.com/wp-content/uploads/2024/10/halloween-best.jpg?quality=85&w=1024&h=628&crop=1",
+      "publishedAt": "2024-10-15T18:07:10Z",
+      "content": "You arent the only one searching for Halloween costume ideas.\r\nAs the holiday inches closer, Google has released a Frightgeist site with data on trending costumes to determine the top Halloween costu… [+1624 chars]"
+    },
+    {
+      "source": {
+        "id": "die-zeit",
+        "name": "Die Zeit"
+      },
+      "author": "ZEIT ONLINE: News -",
+      "title": "Sportpolitik: Special Olympics stellen Weichen für inklusive Zukunft",
+      "description": "Hier finden Sie Informationen zu dem Thema „Sportpolitik“. Lesen Sie jetzt „Special Olympics stellen Weichen für inklusive Zukunft“.",
+      "url": "https://www.zeit.de/news/2024-10/16/special-olympics-stellen-weichen-fuer-inklusive-zukunft",
+      "urlToImage": "https://img.zeit.de/news/2024-10/16/special-olympics-stellen-weichen-fuer-inklusive-zukunft-image-group/wide__1300x731",
+      "publishedAt": "2024-10-16T11:06:56Z",
+      "content": "Das Weltspiele-Komitee der Special Olympics World Games Berlin 2023 hat in seiner Abschlusssitzung die Weichen für den weiteren Aufbau des inklusiven Sports in Deutschland gestellt. So sollen die nac… [+2571 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Dan Hajducky",
+      "title": "Jordan game-worn Bulls jersey goes for $4.68M",
+      "description": "A game-worn Michael Jordan jersey from the Chicago Bulls' 1996-97 season fetched the fourth-highest price for an NBA jersey, going for $4.68 million via Sotheby's",
+      "url": "https://www.espn.com/nba/story/_/id/42196118/michael-jordan-game-worn-bulls-jersey-goes-468m",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1104%2Fr1410469_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-11-04T23:29:52Z",
+      "content": "A game-worn Michael Jordan jersey from the Chicago Bulls' 1996-97 season has sold for $4.68 million via Sotheby's.\r\nThe jersey was worn in at least 17 games during the season, including the game in w… [+1647 chars]"
+    },
+    {
+      "source": {
+        "id": "time",
+        "name": "Time"
+      },
+      "author": "LISA MASCARO and LOLITA C. BALDOR / AP",
+      "title": "Donald Trump Asks Rep. Mike Waltz to Be National Security Adviser: What to Know",
+      "description": "The nod would put Waltz at the forefront of a litany of crises—from Ukraine to the Middle East.",
+      "url": "https://time.com/7175211/mike-waltz-trump-national-security-adviser/",
+      "urlToImage": "https://api.time.com/wp-content/uploads/2024/11/mike-waltz-trump-national-security-adviser.jpg?quality=85&crop=0px%2C45px%2C1024px%2C536px&resize=1200%2C628&strip",
+      "publishedAt": "2024-11-12T04:00:00Z",
+      "content": "President-elect Donald Trump has asked U.S. Rep. Michael Waltz, a retired Army National Guard officer and war veteran, to be his national security adviser, a person familiar with the matter said Mond… [+3402 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "DIYphotography"
+      },
+      "author": "Dunja Djudjic",
+      "title": "Getty photographer Arturo Holmes shares his top five secrets to iconic event photography",
+      "description": "In a recent video from B&H, Getty Images staff photographer Arturo Holmes shares insights from his experience covering the Paris 2024 Olympics. He shares his...\nThe post Getty photographer Arturo Holmes shares his top five secrets to iconic event photography …",
+      "url": "https://www.diyphotography.net/getty-photographer-arturo-holmes-shares-his-top-five-secrets-to-iconic-event-photography/",
+      "urlToImage": "https://www.diyphotography.net/wp-content/uploads/2024/11/rst1plsyn6o.jpg",
+      "publishedAt": "2024-11-08T15:33:56Z",
+      "content": "In a recent video from B&amp;H, Getty Images staff photographer Arturo Holmes shares insights from his experience covering the Paris 2024 Olympics. He shares his top five tips for any photographer pr… [+3710 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "IndieWire"
+      },
+      "author": "Tony Maglio",
+      "title": "Peacock Lost $436 Million in the Paris Olympics Quarter",
+      "description": "Peacock added 3 million subscribers in the Paris Olympics quarter, but lost $436 million.",
+      "url": "https://www.indiewire.com/news/business/peacock-losses-paris-olympics-1235060622/",
+      "urlToImage": "https://www.indiewire.com/wp-content/uploads/2024/10/GettyImages-2166302774.jpg?w=650",
+      "publishedAt": "2024-10-31T11:09:57Z",
+      "content": "Peacock added 3 million subscribers this summer (July 1 to September 30), when it was the streaming home to the Paris Olympics. Simultaneously, the service lost $436 million in the quarter. Peacock n… [+2381 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "Selina Wang",
+      "title": "Rubio and Waltz picks put China back at the center of US foreign policy",
+      "description": "Trump’s expected choice of Sen. Marco Rubio and Rep. Mike Waltz indicates China is going to be at the center of U.S. foreign policy, deepening U.S.-China tensions.",
+      "url": "https://abcnews.go.com/Politics/rubio-waltz-picks-puts-china-back-center-us/story?id=115787057",
+      "urlToImage": "https://i.abcnewsfe.com/a/867a26ec-ebaa-4774-9e21-4cbbcab4df98/rubio-waltz-gty-lv-241112_1731443839923_hpMain_16x9.jpg?w=1600",
+      "publishedAt": "2024-11-12T23:16:33Z",
+      "content": "President-elect Donald Trump's expected choice of Sen. Marco Rubio and Rep. Mike Waltz as his secretary of state and national security adviser, respectively, indicates China is going to be at the cen… [+3544 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Joe Yerdon",
+      "title": "Dream 3-on-3 Lineups for the 2026 Winter Olympics",
+      "description": "We know hockey fans everywhere are beyond excited about seeing NHL players return to the Winter Olympics in 2026. Seeing the best players in the world…",
+      "url": "https://bleacherreport.com/articles/10142729-dream-3-on-3-lineups-for-the-2026-winter-olympics",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1731128942/enovrgawon6ofsxmftts.jpg",
+      "publishedAt": "2024-11-09T12:00:00Z",
+      "content": "Nikita Kucherov and Alex OvechkinDave Sandford/NHLI via Getty Images\r\nNikita Kucherov, Alex Ovechkin and Kirill Kaprizov (Goalie: Igor Shesterkin)\r\nAlthough Russia has not been cleared to take part i… [+1496 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rolling Stone"
+      },
+      "author": "Emily Zemler",
+      "title": "Olympics Standout Rachael ‘Raygun’ Gunn Retires From Competitive Breaking",
+      "description": "Rachael \"Raygun\" Gunn has confirmed she will no longer compete in competitive breaking after going viral during the Paris Olympics.",
+      "url": "http://www.rollingstone.com/culture/culture-news/rachael-raygun-gunn-competitive-breaking-retirement-olympics-1235155776/",
+      "urlToImage": "https://www.rollingstone.com/wp-content/uploads/2024/11/GettyImages-2165538742.jpg?w=1600&h=900&crop=1",
+      "publishedAt": "2024-11-07T08:29:14Z",
+      "content": "Rachael “Raygun” Gunn is hanging up her tracksuit, at least professionally. The 37-year-old Australian B-Girl, a favorite during the Paris Olympics thanks to her unusual moves, confirmed that she wil… [+2653 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Shams Charania",
+      "title": "Sources: Embiid's participation to be investigated",
+      "description": "The NBA is likely to begin an investigation later this week into the Philadelphia 76ers surrounding the player participation of All-NBA center Joel Embiid, sources told ESPN on Wednesday.",
+      "url": "https://www.espn.com/nba/story/_/id/41964254/sources-nba-investigate-76ers-joel-embiid-player-participation",
+      "urlToImage": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1017%2Fr1401996_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-10-23T19:47:00Z",
+      "content": "The NBA is likely to begin an investigation later this week into the Philadelphia 76ers surrounding the player participation of All-NBA center Joel Embiid, sources told ESPN on Wednesday.\r\nEmbiid did… [+1852 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": null,
+      "title": "Donovan, Browns radio announcer, dies at age 68",
+      "description": "Jim Donovan, the beloved radio play-by-play announcer for the Cleveland Browns and a TV sports fixture for more than four decades, died Saturday at the age of 68.",
+      "url": "https://www.espn.com/nfl/story/_/id/42015111/jim-donovan-browns-radio-announcer-dies-cancer-68",
+      "urlToImage": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1026%2Fr1406093_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-10-26T18:51:29Z",
+      "content": "Oct 26, 2024, 02:33 PM ET\r\nCLEVELAND -- Jim Donovan, the beloved radio play-by-play announcer for the Cleveland Browns and a TV sports fixture for more than four decades, died Saturday. He was 68.\r\nD… [+2352 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "TMZ"
+      },
+      "author": "TMZ Staff",
+      "title": "Olympics Star Noah Lyles Proposes To Jamaican Sprinter Junelle Bromfield",
+      "description": "Team USA gold medalist Noah Lyles just hit another milestone -- the world's fastest man popped the question to his longtime girlfriend, Jamaican sprinter Junelle Bromfield ... and she said \"yes!\" Lyles got down on one knee on Saturday ... and…",
+      "url": "https://www.tmz.com/2024/10/14/noah-lyles-proposes-junelle-bromfield/",
+      "urlToImage": "https://imagez.tmz.com/image/04/16by9/2024/10/14/0432e0d572f543f3ad4d9c58de309086_xl.jpg",
+      "publishedAt": "2024-10-14T14:06:45Z",
+      "content": "Team USA gold medalist Noah Lyles just hit another milestone -- the world's fastest man popped the question to his longtime girlfriend, Jamaican sprinter Junelle Bromfield ... and she said \"yes!\"\r\nLy… [+1055 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Adam Wells",
+      "title": "Video: Celtics' Jaylen Brown Says He Won't Join Nike to Increase USA Olympic Chances",
+      "description": "Despite being passed over for Team USA at the 2024 Summer Olympics, Boston Celtics star Jaylen Brown isn't going to become a member of the Nike family to…",
+      "url": "https://bleacherreport.com/articles/10140396-video-celtics-jaylen-brown-says-he-wont-join-nike-to-increase-usa-olympic-chances",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1729601370/aalngdppe7jtwsataxa2.jpg",
+      "publishedAt": "2024-10-22T13:04:29Z",
+      "content": "Stephen Gosling/NBAE via Getty Images\r\nDespite being passed over for Team USA at the 2024 Summer Olympics, Boston Celtics star Jaylen Brown isn't going to become a member of the Nike family to potent… [+522 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Andrew Peters",
+      "title": "Australian Breakdancer Raygun Done Competing After Olympic Performance Backlash",
+      "description": "Raygun's break-dancing performances at the Paris Olympics will be her last. The Australian break dancer announced Wednesday that she will no longer compete in…",
+      "url": "https://bleacherreport.com/articles/10142520-australian-breakdancer-raygun-done-competing-after-olympic-performance-backlash",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1730940179/apje3kfmggvsmchxlpea.jpg",
+      "publishedAt": "2024-11-07T00:48:00Z",
+      "content": "Ezra Shaw/Getty Images\r\nRaygun's break-dancing performances at the Paris Olympics will be her last.\r\nThe Australian break dancer announced Wednesday that she will no longer compete in the sport after… [+2216 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Adam Wells",
+      "title": "Video: Jayson Tatum Claps Back at Critics, Says He'll Do 'What the F--k I Want to Do'",
+      "description": "Jayson Tatum isn't interested in catering to anyone who says he should speak out negatively about his lack of playing time with Team USA during the Olympics…",
+      "url": "https://bleacherreport.com/articles/10142539-video-jayson-tatum-claps-back-at-critics-says-hell-do-what-the-f--k-i-want-to-do",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_544,w_1800,h_1196,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1730985117/elnwuf6m2axoxe5h4nt8.jpg",
+      "publishedAt": "2024-11-07T13:19:50Z",
+      "content": "Adam Glanzman/Getty Images\r\nJayson Tatum isn't interested in catering to anyone who says he should speak out negatively about his lack of playing time with Team USA during the Olympics this summer.\r\n… [+3320 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Paul Kasabian",
+      "title": "Former Olympic Snowboarder Ryan Wedding Charged with Drug Trafficking, Murder",
+      "description": "Ryan Wedding, a former snowboarder who represented Canada in the 2002 Winter Olympics, is wanted by the Federal Bureau of Investigation after being charged…",
+      "url": "https://bleacherreport.com/articles/10139832-former-olympic-snowboarder-ryan-wedding-charged-with-drug-trafficking-murder",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1729199019/vuxqtctpeavf688sclja.jpg",
+      "publishedAt": "2024-10-17T21:29:23Z",
+      "content": "Tim De Waele/Getty Images\r\nRyan Wedding, a former snowboarder who represented Canada in the 2002 Winter Olympics, is wanted by the Federal Bureau of Investigation after being charged with murder and … [+3079 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "DOUG FEINBERG AP sports writer",
+      "title": "Abdi Nageeye of the Netherlands and Sheila Chepkirui of Kenya win the NYC Marathon",
+      "description": "Abdi Nageeye of the Netherlands won the men’s race at the New York City Marathon and Sheila Chepkirui of Kenya took the women’s event",
+      "url": "https://abcnews.go.com/Sports/wireStory/kenyas-sheila-chepkirui-wins-womens-race-new-york-115442308",
+      "urlToImage": "https://i.abcnewsfe.com/a/84d5d290-4624-43c0-b778-37334514aab0/wirestory_9273c453eb05203cd18c3eb5ff0a9d09_16x9.jpg?w=1600",
+      "publishedAt": "2024-11-04T01:42:18Z",
+      "content": "NEW YORK -- Abdi Nageeye and Sheila Chepkirui used strong kicks in the final mile to pull away from their nearest competitors and both win the New York City Marathon for the first time Sunday.\r\nNagee… [+3926 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": "Lilia Sebouai",
+      "title": "Europe’s medical students to receive training for climate-related health problems",
+      "description": "Medical schools across Europe will ramp up training for dengue fever and malaria as they brace for the arrival of more dangerous mosquito-borne diseases with...",
+      "url": "https://uk.news.yahoo.com/europe-medical-students-receive-training-164714688.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/Je9fI2DTPo5pahsTCnHuIA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03NTA-/https://media.zenfs.com/en/the_telegraph_818/8c9d59d20e6eaf5138e0a80ce2a9c70f",
+      "publishedAt": "2024-10-14T16:47:14Z",
+      "content": "Medical schools across Europe will ramp up training for dengue fever and malaria as they brace for the arrival of more dangerous mosquito-borne diseases with rising temperatures.\r\nMore than 10,000 st… [+2826 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Amanda Goh",
+      "title": "Julia Hawkins, a record-setting centenarian runner, dies at 108. Here are her 5 longevity tips.",
+      "description": "Julia Hawkins picked up running after she turned 100 years old.",
+      "url": "https://www.businessinsider.com/longevity-tips-julia-hawkins-centenarian-runner-aging-healthy-2024-10",
+      "urlToImage": "https://i.insider.com/671a8e8d01ea6d83dee3d6bf?width=1200&format=jpeg",
+      "publishedAt": "2024-10-24T18:14:57Z",
+      "content": "Julia Hawkins competing in the National Senior Games on June 17, 2024National Senior Games Association/Brit Huckabay\r\n\u003Cul\u003E\u003Cli\u003EJulia Hawkins, a centenarian runner, died at 108 in Baton Rouge, Louisian… [+5245 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Scott Polacek",
+      "title": "Video: Noah Lyles, Gabby Thomas Star in New Netflix Trailer for 'Sprint Part 2'",
+      "description": "It's time to go back to Paris. Track and field fans looking to relive the magic of the 2024 Olympics will have the opportunity to do just that, as Netflix is…",
+      "url": "https://bleacherreport.com/articles/10139742-video-noah-lyles-gabby-thomas-star-in-new-netflix-trailer-for-sprint-part-2",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_1394,w_1800,h_1197,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1729124825/z4e8yzflftekuiun5qwm.jpg",
+      "publishedAt": "2024-10-17T14:31:16Z",
+      "content": "Netflix\r\nIt's time to go back to Paris.\r\nTrack and field fans looking to relive the magic of the 2024 Olympics will have the opportunity to do just that, as Netflix is releasing Sprint Part 2. The se… [+2341 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Adam Wells",
+      "title": "Victor Wembanyama: 'Conditioning Is Not an Excuse' for Struggles in Spurs vs. Mavs",
+      "description": "Playing in his first real game since France's loss to the United States in the gold medal game at the Olympics, Victor Wembanyama was not at the peak of his…",
+      "url": "https://bleacherreport.com/articles/10140845-victor-wembanyama-conditioning-is-not-an-excuse-for-struggles-in-spurs-vs-mavs",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_145,w_1800,h_1196,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1729856642/t0dw0q8mnn0bbhqlatv5.jpg",
+      "publishedAt": "2024-10-25T12:09:31Z",
+      "content": "Joe Murphy/NBAE via Getty Images\r\nPlaying in his first real game since France's loss to the United States in the gold medal game at the Olympics, Victor Wembanyama was not at the peak of his power fo… [+2414 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Maria Noyen",
+      "title": "The NFL's $1,000 branded designer jackets are the latest sign of fashion's newfound love affair with sports",
+      "description": "As luxury fashion brands see their pandemic boom fade, some are looking to boost their exposure by collaborating with sports events and teams.",
+      "url": "https://www.businessinsider.com/nfl-partnership-luxury-fashion-brand-pricey-women-team-jackets-2024-10",
+      "urlToImage": "https://i.insider.com/671675959b3250dbbce8b88c?width=1200&format=jpeg",
+      "publishedAt": "2024-10-22T10:22:09Z",
+      "content": "The NFL is collaborating with premium fashion brand Veronica Beard on a line of $1,000 blazers.NFL/Veronica Beard\r\n\u003Cul\u003E\u003Cli\u003ENew York low-key women's fashion brand Veronica Beard just launched a collab… [+5187 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Variety"
+      },
+      "author": "Brian Steinberg",
+      "title": "NBCU Olympics Ad-Sales Chief Dan Lovinger to Exit in Restructuring",
+      "description": "Dan Lovinger, who supervised an increasingly complex Olympics ad-sales effort for NBCUniversal and delivered what is believed to be a record level of Madison Avenue sponsorship for the recent Paris Olympics, is leaving the company as it seeks to revamp its ef…",
+      "url": "https://variety.com/2024/tv/news/dan-lovinger-nbcuniversal-olympics-advertising-sales-exit-restructuring-1236177790/",
+      "urlToImage": "https://variety.com/wp-content/uploads/2022/01/Dan-Lovinger-Headshot-2-e1643648132600.jpg?w=1000&h=563&crop=1",
+      "publishedAt": "2024-10-14T22:15:11Z",
+      "content": "Dan Lovinger, who supervised an increasingly complex Olympics ad-sales effort for NBCUniversal and delivered what is believed to be a record level of Madison Avenue sponsorship for the recent Paris O… [+1890 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "TMZ"
+      },
+      "author": "TMZ Staff",
+      "title": "Olympic Swimmer Luana Alonso Launches OnlyFans With $35 Monthly Subscriptions",
+      "description": "Controversial Paraguayan swimmer Luana Alonso is kickstarting her post-athletic career ... by taking her talents to OnlyFans!! The 20-year-old beauty -- who made headlines for reportedly being booted from the 2024 Olympics for sparking an…",
+      "url": "https://www.tmz.com/2024/10/14/olympic-swimmer-luana-alonso-onlyfans/",
+      "urlToImage": "https://imagez.tmz.com/image/77/16by9/2024/10/14/77b1bdc4e6244b3e8c55c32d885fdeda_xl.jpg",
+      "publishedAt": "2024-10-14T16:44:08Z",
+      "content": "Controversial Paraguayan swimmer Luana Alonso is kickstarting her post-athletic career ... by taking her talents to OnlyFans!!\r\nThe 20-year-old beauty -- who made headlines for reportedly being boote… [+907 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Stereogum"
+      },
+      "author": "Abby Jones",
+      "title": "Breaking News: Raygun Has Retired",
+      "description": "When the world needed her most, she vanished: Rachael “Raygun” Gunn, the Australian breakdancer whose performance at the summer Olympics made her the butt of endless jokes, has announced that she’ll no longer be competing in the sport.",
+      "url": "https://www.stereogum.com/2286632/breaking-news-raygun-has-retired/news/",
+      "urlToImage": "https://static.stereogum.com/uploads/2024/11/GettyImages-2166046728-1730990399.jpg",
+      "publishedAt": "2024-11-07T15:29:06Z",
+      "content": "When the world needed her most, she vanished: Rachael “Raygun” Gunn, the Australian breakdancer whose performance at the summer Olympics made her the butt of endless jokes, has announced that she’ll … [+1395 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Doric Sam",
+      "title": "Video: Jordan Chiles Reflects on Olympic Medal Controversy, 'I Know We Were Right'",
+      "description": "Team USA gymnastics star Jordan Chiles has not given up on her effort to reclaim the Olympic medal that was stripped from her following a controversial…",
+      "url": "https://bleacherreport.com/articles/10142985-video-jordan-chiles-reflects-on-olympic-medal-controversy-i-know-we-were-right",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1731344487/umftkugcp6rnemh6urjs.jpg",
+      "publishedAt": "2024-11-11T17:08:10Z",
+      "content": "John Nacion/Getty Images\r\nTeam USA gymnastics star Jordan Chiles has not given up on her effort to reclaim the Olympic medal that was stripped from her following a controversial ruling.\r\n\"It's hard t… [+1979 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "Raygun quits competitive breakdancing after Paris Olympics backlash",
+      "description": "The Australian, ridiculed for her kangaroo hops at the games, says competing has become 'really difficult' for her.",
+      "url": "https://www.aljazeera.com/sports/2024/11/7/raygun-quits-competitive-breakdancing-after-paris-olympics-backlash",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/11/2024-08-09T000000Z_676007717_UP1EK891DX5SZ_RTRMADP_3_OLYMPICS-2024-BREAKING-1730960580.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-11-07T06:44:01Z",
+      "content": "Australian breakdancer Rachael Raygun Gunn has announced her retirement from competition, citing a really upsetting backlash following her performance at the Paris Olympics.\r\nRaygun, 37, became somet… [+2374 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Alexa Philippou",
+      "title": "Thibault father-son duo out as Mystics GM, coach",
+      "description": "The Washington Mystics are parting ways with coach Eric Thibault and general manager Mike Thibault, the franchise announced Wednesday.",
+      "url": "https://www.espn.com/wnba/story/_/id/41961482/mystics-part-ways-coach-eric-thibault-gm-mike-thibault",
+      "urlToImage": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1023%2Fr1404611_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-10-23T16:21:25Z",
+      "content": "A huge shake-up in the Washington Mystics organization was announced Wednesday, as the franchise said it has \"mutually agreed to part ways\" with general manager Mike Thibault and head coach Eric Thib… [+2868 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": null,
+      "title": "Malinin hits backflip, quads to win Skate America",
+      "description": "U.S. and world champion Ilia Malinin hit four quads and a backflip, which had been banned until this season, to win the Skate America title for the third year in a row.",
+      "url": "https://www.espn.com/olympics/story/_/id/41906640/ilia-malinin-lands-quads-backflip-win-skate-america-title",
+      "urlToImage": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1020%2Fr1403150_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-10-20T19:05:23Z",
+      "content": "Oct 20, 2024, 02:59 PM ET\r\nWorld champion Ilia Malinin won Skate America on Sunday for the third consecutive year, altering his free skate on the fly after an early mistake and punctuating the progra… [+3302 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "J.J. Post",
+      "title": "Relive the 2024 offseason through social media",
+      "description": "Some of the biggest moments of the NBA offseason this summer were documented through player reaction on social media.",
+      "url": "https://www.espn.com/nba/story/_/id/41931759/nba-offseason-social-media-reaction",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1016%2Fr1401601_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-10-22T15:05:15Z",
+      "content": "As the NBA regular season tips off on Tuesday night with a star-studded doubleheader, it's as good a time as ever to catch up on all the happenings from a busy offseason.\r\nEditor's Picks\r\nBetween pla… [+3321 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Paul Kasabian",
+      "title": "NBA Scout: Spurs' Victor Wembanyama Looks 'Tired Early This Season' After Olympics",
+      "description": "Amid his slow start to the 2024-25 season, there is at least some thought within NBA circles that San Antonio Spurs superstar center Victor Wembanyama hasn't…",
+      "url": "https://bleacherreport.com/articles/10135740-nba-scout-spurs-victor-wembanyama-looks-tired-early-this-season-after-olympics",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1726598001/rmdxgzzivtj2to4oueic.jpg",
+      "publishedAt": "2024-11-08T15:22:53Z",
+      "content": "Justin Ford/Getty Images\r\nAmid his slow start to the 2024-25 season, there is at least some thought within NBA circles that San Antonio Spurs superstar center Victor Wembanyama hasn't been himself.\r\n… [+2178 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Kalan Hooks",
+      "title": "Olympic champion Noah Lyles races streamer IShowSpeed in 50-meter dash",
+      "description": "IShowSpeed challenged the Olympic champion to a race for $100,000 and a shot at being the fastest man in the world.",
+      "url": "https://www.espn.com/olympics/story/_/id/42253671/noah-lyles-ishowspeed-race",
+      "urlToImage": "https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1107%2Fr1411806_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-11-07T23:38:06Z",
+      "content": "American sprinter and Olympic gold medalist Noah Lyles raced on Wednesday, but not for any medals.\r\nEditor's Picks\r\nInstead, the three-time medalist competed for $100,000 against streamer IShowSpeed.… [+2646 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Internet"
+      },
+      "author": "info@thehackernews.com (The Hacker News)",
+      "title": "Inside Iran’s Cyber Playbook: AI, Fake Hosting, and Psychological Warfare",
+      "description": "U.S. and Israeli cybersecurity agencies have published a new advisory attributing an Iranian cyber group to targeting the 2024 Summer Olympics and compromising a French commercial dynamic display provider to show messages denouncing Israel's participation in …",
+      "url": "https://thehackernews.com/2024/11/inside-irans-cyber-playbook-ai-fake.html",
+      "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpRClufGReAnocRG-QpI-0XEsbR5vDbg_Is3kyvVJbtreod3aEMBggZzzVDbug06JI3cEzNtkQIVNCo-pUPtDPIRfnengLhDHEb2RDHLySD3Djkp9ObYS5tQ2gckvy3RH5eVBd_DbEoU7pa9VUYWlSNoc3vS-uDN31kBcUBmSJ6VymxZjfMLHnN2W0JiFW/s728-rw-e365/iran-hackers.png",
+      "publishedAt": "2024-11-01T14:09:00Z",
+      "content": "U.S. and Israeli cybersecurity agencies have published a new advisory attributing an Iranian cyber group to targeting the 2024 Summer Olympics and compromising a French commercial dynamic display pro… [+4412 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "hbrueck@businessinsider.com (Hilary Brueck)",
+      "title": "A 56-year-old recruiter sets aside $12 a day for her longevity routine to slow aging. Here's how she spends it.",
+      "description": "She's spending a fraction of what elite biohackers do for longevity, and getting great results.",
+      "url": "https://www.businessinsider.com/56-year-old-slowing-aging-spends-on-vegetables-supplements-gym-2024-11",
+      "urlToImage": "https://i.insider.com/6728df37192f52589855d02a?width=1024&format=jpeg",
+      "publishedAt": "2024-11-05T16:02:43Z",
+      "content": "Julie Gibson Clark has been biohacking since long before it was a cool thing to do. It runs in her family.\r\nHer dad, a NASA astronaut on Skylab in the 1970s, instilled in her from a young age the ide… [+5710 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Mike Chiari",
+      "title": "Photo: USWNT Reveals Roster for October Matches; Trinity Rodman Out Due to Injury",
+      "description": "The United States Women's National Soccer Team announced its roster Thursday for three upcoming friendlies in the month of October. Several players who helped…",
+      "url": "https://bleacherreport.com/articles/10139778-photo-uswnt-reveals-roster-for-october-matches-trinity-rodman-out-due-to-injury",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_0,w_1800,h_1200,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1729177133/ujs2bbsffb2ho3wdredq.jpg",
+      "publishedAt": "2024-10-17T15:02:11Z",
+      "content": "Photo credit: B/R Football\r\nThe United States Women's National Soccer Team announced its roster Thursday for three upcoming friendlies in the month of October.\r\nSeveral players who helped the USWNT g… [+1909 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "Alex Stone, Meredith Deliso",
+      "title": "Former Olympic snowboarder accused of running large drug trafficking group",
+      "description": "Ryan Wedding, 43, a former Olympian from Canada who now resides in Mexico, is among 16 people charged in a federal indictment.",
+      "url": "https://abcnews.go.com/US/former-olympic-snowboarder-ryan-wedding-drug-trafficking-charges/story?id=114904546",
+      "urlToImage": "https://i.abcnewsfe.com/a/caee6440-6d1f-4bda-9e6a-b6c9a92a3204/ryan-wedding-gty-jt-241017_1729196077613_hpMain_16x9.jpg?w=1600",
+      "publishedAt": "2024-10-17T21:57:51Z",
+      "content": "A former Olympic snowboarder is accused of running a major transnational drug trafficking organization that shipped massive amounts of cocaine and allegedly hired hitmen to murder multiple people, fe… [+3646 chars]"
+    },
+    {
+      "source": {
+        "id": "time",
+        "name": "Time"
+      },
+      "author": "Rebecca Schneid",
+      "title": "The Presidential Podcast Media Tour",
+      "description": "In the lead up to the election, Harris and Trump have taken to appearing on podcasts to engage with potential voters.",
+      "url": "https://time.com/7099104/presidential-podcast-media-tour-donald-trump-kamala-harris/",
+      "urlToImage": "https://api.time.com/wp-content/uploads/2024/10/GettyImages-2172679697.jpg?quality=85&w=1024&h=628&crop=1",
+      "publishedAt": "2024-10-26T15:53:54Z",
+      "content": "In the lead up to the presidential election, candidates Vice President Kamala Harris and former President Donald Trump have taken to appearing on podcasts to engage with potential voters.\r\nAccording … [+10407 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Raygun retires from breaking after Olympic backlash",
+      "description": "Rachael Gunn said the level of scrutiny around her performance made it difficult to keep competing.",
+      "url": "https://www.bbc.com/news/articles/cn9xyqgrlz9o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/3cc3/live/9d932840-9c92-11ef-8538-e1655f5a8342.jpg",
+      "publishedAt": "2024-11-06T23:14:56Z",
+      "content": "Australian breaker Rachael Gunn has announced she will retire from competition, citing the viral response to her performance at the Paris Olympics.\r\nGunn - who is known as B-girl Raygun - failed to g… [+1843 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Jamal Collier",
+      "title": "Josh Giddey's new role 'making things easy' for the Bulls",
+      "description": "After being traded to Chicago in June, Josh Giddey is finding a home in the Bulls' fast-paced offense.",
+      "url": "https://www.espn.com/nba/story/_/id/42228761/josh-giddey-chicago-bulls-hoping-next-step",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0303%2Fr1299518_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-11-07T13:48:07Z",
+      "content": "THE CHICAGO BULLS were closing in on their first win of the season as Josh Giddey brought the ball up the floor, looking to extend a nine-point lead over the Milwaukee Bucks.\r\nWith 6:12 remaining in … [+14029 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Variety"
+      },
+      "author": "Michaela Zee",
+      "title": "Australian Breakdancer Raygun Retires From Competition After Olympic Backlash",
+      "description": "Australian breakdancer Rachael Gunn, aka Raygun, has announced that she is retiring from competition following the backlash over her performance at the Paris Olympics. “I’m not going to compete anymore, no,” Gunn said on Australia’s 2DayFM “The Jimmy and Nath…",
+      "url": "https://variety.com/2024/sports/news/australian-breakdancer-raygun-retires-competition-olympic-backlash-1236203323/",
+      "urlToImage": "https://variety.com/wp-content/uploads/2024/11/GettyImages-2166046728.jpg?w=1000&h=563&crop=1",
+      "publishedAt": "2024-11-07T03:53:07Z",
+      "content": "Australian breakdancer Rachael Gunn, aka Raygun, has announced that she is retiring from competition following the backlash over her performance at the Paris Olympics.\r\n“I’m not going to compete anym… [+1896 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Eonline.com"
+      },
+      "author": null,
+      "title": "Jordan Chiles Says She Has Bronze Medal Amid 2024 Olympics Controversy",
+      "description": "Jordan Chiles is speaking her truth.\nThe Olympian has been embroiled in a tense back and forth over the bronze medal she won for Team USA at the 2024 Paris Olympics. Now, four months after her win...",
+      "url": "https://www.eonline.com/news/1409790/jordan-chiles-reveals-she-still-has-bronze-medal-in-emotional-update-after-2024-olympics-controversy",
+      "urlToImage": "https://akns-images.eonline.com/eol_images/Entire_Site/2024811/cr_1200x1200-240911115647-shutterstock_editorial_14621305as.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top",
+      "publishedAt": "2024-11-11T15:16:04Z",
+      "content": "But then her coaches submitted an inquiry upon her behalf. According to NBC Olympics, an inquiry is a verbal challenge of a routines score. It is followed by a written inquiry that must be submitted … [+1243 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "LA Olympics would be '100%' if 50m breaststroke is added - Peaty",
+      "description": "Three-time Olympic swimming champion Adam Peaty tells BBC Breakfast that it would be \"100% yes\" to the Los Angeles Games in 2028 if the 50m breaststroke is added as an event.",
+      "url": "https://www.bbc.com/sport/olympics/videos/c9dywppw4y5o",
+      "urlToImage": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/eb3a/live/486a39b0-8bb4-11ef-8936-1185f9e7d044.jpg",
+      "publishedAt": "2024-10-16T11:59:52Z",
+      "content": "Three-time Olympic swimming champion Adam Peaty tells BBC Breakfast that it would be \"100% yes\" to competing in the Los Angeles Games in 2028 if the 50m breaststroke is added as an event.\r\nREAD MORE:… [+49 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Jeff Kassouf",
+      "title": "Preview: How can each team win the championship?",
+      "description": "Eight teams remain in the NWSL Championship trophy race. Why will each win? What could be each team's undoing?",
+      "url": "https://www.espn.com/soccer/story/_/id/42220621/nwsl-playoffs-preview-how-team-win-championship",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0923%2Fr1390720_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-11-08T14:16:54Z",
+      "content": "The largest playoff field in National Women's Soccer League history is about to kick off, and all four quarterfinals feature clear favorites.\r\nFor better or worse, the playoffs have expanded from six… [+9174 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "KTLA Los Angeles"
+      },
+      "author": "Travis Schlepp",
+      "title": "How Los Angeles is preparing for one of the most action-packed weekends in decades",
+      "description": "With arguably the most anticipated World Series in decades kicking off this week in Los Angeles, city leaders say a massive effort is underway to ensure the ...",
+      "url": "https://ktla.com/news/local-news/how-los-angeles-is-preparing-for-one-of-the-action-packed-weekends-in-decades/",
+      "urlToImage": "https://media.zenfs.com/en/ktla_articles_362/2e74d35935747f40dd87a4423a3b5ca4",
+      "publishedAt": "2024-10-24T21:07:35Z",
+      "content": "With arguably the most anticipated World Series in decades kicking off this week in Los Angeles, city leaders say a massive effort is underway to ensure the Fall Classic and other local events go off… [+4105 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "Smith and Ellis announce international retirement",
+      "description": "British mixed doubles pair Lauren Smith and Marcus Ellis reveal they are expecting a baby and will no longer compete at international level.",
+      "url": "https://www.bbc.com/sport/badminton/articles/cg7gd42p2dxo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/73d4/live/9bb3a650-9f65-11ef-be70-11353c06a79f.jpg",
+      "publishedAt": "2024-11-10T13:50:11Z",
+      "content": "British mixed doubles pair Lauren Smith and Marcus Ellis have retired from international badminton after revealing they are expecting a baby.\r\nThe couple won European gold in 2019, competed at the Ol… [+781 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "Women's Footballer of the Year contender Banda",
+      "description": "BBC Sport profiles Orlando Pride and Zambia forward Barbra Banda, one of five nominees for the BBC Women's Footballer of the Year 2024 award.",
+      "url": "https://www.bbc.com/sport/football/articles/crl82288k2po",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/ea57/live/46622f30-8ab8-11ef-b6b0-c9af5f7f16e4.jpg",
+      "publishedAt": "2024-10-15T05:33:33Z",
+      "content": "How did it feel playing at the Olympics and scoring a hat-trick?\r\n\"Putting on my Zambian shirt, it's very important for me. When we qualified to the Olympics that was so exciting, for the second time… [+704 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "Injury lay-off helped Jones deal with father's death",
+      "description": "Leicester Tigers and England centre Megan Jones says the injury which kept her out for three months helped her deal with the death of her father.",
+      "url": "https://www.bbc.com/sport/rugby-union/articles/cy4nyj298kgo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/1dc3/live/5e940f10-9d0a-11ef-b73e-5b38a3516be8.jpg",
+      "publishedAt": "2024-11-07T13:23:51Z",
+      "content": "Jones represented Team GB at Paris Olympics during the summer and was due to link up with England side ahead of their WXV campaign when her father passed away.\r\nAn ankle injury, which required surger… [+799 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "'Buzzing' - Griggs was 'not trying' to break Parkrun record",
+      "description": "Teenager Nick Griggs admits he didn't set out to break the Parkrun world record after achieving the feat in Belfast on Saturday.",
+      "url": "https://www.bbc.com/sport/athletics/articles/c30pvq3080yo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/e94b/live/7e9f1de0-a011-11ef-a040-d74242d1f59e.jpg",
+      "publishedAt": "2024-11-11T10:00:48Z",
+      "content": "While Parkrun does not classify times as world records, describing its events as a \"run and not a race\", it is the second record to be set at the Belfast venue in 12 months after fellow Irish interna… [+1003 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "HYPEBEAST"
+      },
+      "author": "info@hypebeast.com (Hypebeast)",
+      "title": "Sporty & Rich Serves Up Two New adidas Originals SL72 Colorways",
+      "description": "Name: Sporty & Rich x adidas Originals SL72Colorway: \"Mint Rush/Power Purple/Cream White\" and \"Light Yellow/Real Blue/Footwear White\"SKU: JS0261; JH6702Release Date: November 2024Where to Buy: adidasSporty & Rich has lifted the curtain on two new collaborativ…",
+      "url": "https://hypebeast.com/2024/10/sporty-rich-adidas-originals-sl72-mint-rush-light-yellow-release-info",
+      "urlToImage": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2024%2F10%2F15%2Fsporty-rich-adidas-originals-sl72-mint-rush-light-yellow-release-info-tw2.jpg?w=1080&cbr=1&q=90&fit=max",
+      "publishedAt": "2024-10-15T16:24:30Z",
+      "content": "Name: Sporty &amp; Rich x adidas Originals SL72Colorway: “Mint Rush/Power Purple/Cream White” and “Light Yellow/Real Blue/Footwear White”SKU: JS0261; JH6702Release Date: November 2024Where to Buy:adi… [+1184 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Kyle Barr",
+      "title": "Warner Bros. Exec Says Plans for Max Password-Sharing Crackdown Are Really Just Another Price Hike",
+      "description": "Warner Bros. Discovery is planning to start sending messages to Max subscribers about limiting account sharing later this year.",
+      "url": "https://gizmodo.com/warner-bros-exec-says-plans-for-max-password-sharing-crackdown-are-really-just-another-price-hike-2000521746",
+      "urlToImage": "https://gizmodo.com/app/uploads/2024/11/David-Zaslav-HBO-WarnerBRos.-Discovery.jpg",
+      "publishedAt": "2024-11-07T19:55:46Z",
+      "content": "Warner Bros. Discoverys Max platform is planning a password-sharing crackdown like Netflix and Disney+. Its been honing in on this move for a while, but on Thursday, the media conglomerate’s execs sh… [+3280 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-sports",
+        "name": "Fox Sports"
+      },
+      "author": null,
+      "title": "Bev Priestman fired as Canada women's soccer coach after Olympic drone scandal",
+      "description": "Canada women's soccer coach Bev Priestman has been fired after an independent review of a drone surveillance scandal at the Paris Olympics",
+      "url": "https://www.foxsports.com/stories/soccer/bev-priestman-fired-as-canada-womens-soccer-coach-after-review-of-olympic-drone-scandal",
+      "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2024/11/1408/814/priestman-fired.jpg?ve=1&tl=1",
+      "publishedAt": "2024-11-12T22:55:11Z",
+      "content": "Canada women's coach Bev Priestman, suspended following a drone surveillance scandal at the Paris Olympics, was fired Tuesday following an independent review.\r\nAssistant coach Jasmine Mander and anal… [+3139 chars]"
+    },
+    {
+      "source": {
+        "id": "cbc-news",
+        "name": "CBC News"
+      },
+      "author": null,
+      "title": "Canada Soccer says drone-spying inquiry shows past 'pattern of unacceptable culture'",
+      "description": "Canada Soccer says an independent review has confirmed the Paris Olympics drone-spying scandal was not an isolated misstep.",
+      "url": "https://www.cbc.ca/sports/olympics/summer/soccer/canada-soccer-drony-spying-review-olympics-1.7378812",
+      "urlToImage": "https://i.cbc.ca/1.7378826.1731099806!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/priestman-bev-231026-1180.jpg",
+      "publishedAt": "2024-11-08T21:05:04Z",
+      "content": "Canada Soccer says an independent review has confirmed the Paris Olympics drone-spying scandal was not an isolated misstep.\r\nCanada Soccer CEO Kevin Blue says the spying \"was a symptom of a past patt… [+1544 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "IOC says Khelif preparing legal action after new eligibility claims",
+      "description": "Imane Khelif, 25, won gold in the women's welterweight category at the Paris Games.",
+      "url": "https://www.bbc.com/sport/olympics/articles/c4gp8evl009o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/981f/live/88cfe790-9c2e-11ef-a65b-4d3707c63685.jpg",
+      "publishedAt": "2024-11-06T15:51:42Z",
+      "content": "The Algerian, 25, won women's welterweight gold in Paris this summer a year after being disqualified from the World Championships for reportedly failing gender eligibility tests. \r\nThe tests were con… [+2232 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Mike Chiari",
+      "title": "Photo: USWNT Reveals Roster for October Matches; Trinity Rodman Not in USA's Squad",
+      "description": "The United States Women's National Soccer Team announced its roster Thursday for three upcoming friendlies in the month of October. Several players who helped…",
+      "url": "https://bleacherreport.com/articles/10139778-photo-uswnt-reveals-roster-for-october-matches-trinity-rodman-not-in-usas-squad",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_0,w_1800,h_1200,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1729177133/ujs2bbsffb2ho3wdredq.jpg",
+      "publishedAt": "2024-10-17T15:02:11Z",
+      "content": "Photo credit: B/R Football\r\nThe United States Women's National Soccer Team announced its roster Thursday for three upcoming friendlies in the month of October.\r\nSeveral players who helped the USWNT g… [+598 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yanko Design"
+      },
+      "author": "Gaurav Sood",
+      "title": "DAB Motors’ DeLorean themed e-bike transports you Back To The Future",
+      "description": "DAB Motors’ DeLorean themed e-bike transports you Back To The FutureDAB Motors has rapidly evolved into a niche electric motorbike company that values its French roots. Having numerous takers for their DAB 1α, the outfit...",
+      "url": "https://www.yankodesign.com/2024/11/05/dab-motors-delorean-themed-e-bike-transports-you-back-to-the-future/",
+      "urlToImage": "https://www.yankodesign.com/images/design_news/2024/11/dab-motors-delorean-themed-e-bike-takes-you-back-to-the-future/DAB-Motors-DeLorean-e-bike-7.jpg",
+      "publishedAt": "2024-11-05T20:15:47Z",
+      "content": "DAB Motors has rapidly evolved into a niche electric motorbike company that values its French roots. Having numerous takers for their DAB 1, the outfit has created bold iterations of the acclaimed bi… [+2215 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "TMZ"
+      },
+      "author": "TMZ Staff",
+      "title": "Vikings' Cam Bynum Hoping To Collab With Raygun After INT Celebration Goes Viral",
+      "description": "Camryn Bynum is hoping to parlay his Raygun interception celebration into a meeting with the famous breakdancer ... telling TMZ Sports he's \"1,000 percent\" down to collab with her in some way this offseason. If you missed it ... the Minnesota…",
+      "url": "https://www.tmz.com/2024/11/12/cam-bynum-hoping-for-raygun-collaboration/",
+      "urlToImage": "https://imagez.tmz.com/image/03/16by9/2024/11/11/03a89e410d2a40e89734f684100119e8_xl.jpg",
+      "publishedAt": "2024-11-12T08:30:30Z",
+      "content": "Camryn Bynum is hoping to parlay his Raygun interception celebration into a meeting with the famous breakdancer ... telling TMZ Sports he's \"1,000 percent\" down to collab with her in some way this of… [+1330 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Jonty Colman",
+      "title": "Why are there so few Brits in the NBA?",
+      "description": "As the new NBA season starts, BBC Sport asks why there are so few British players in the league.",
+      "url": "https://www.bbc.com/sport/basketball/articles/c79ng4p4dz2o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/1f1b/live/e9bbd610-8d31-11ef-bee0-39b1bce7fdf1.jpg",
+      "publishedAt": "2024-10-23T08:03:11Z",
+      "content": "Despite the lack of British stars in the NBA, the league generates a large British-based audience.\r\nIn Europe, Great Britain has the second largest number of NBA League Pass subscriptions, only behin… [+1597 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "TMZ"
+      },
+      "author": "TMZ Staff",
+      "title": "Adele in Tears After Spotting Celine Dion at Las Vegas Residency",
+      "description": "Adele had a tearful interlude at her Vegas residency Saturday night ... when she spotted a fan in the audience ... and that would be Celine Dion. Adele was singing \"When We Were Young\" at a packed arena at the Colosseum at Caesars, when she…",
+      "url": "https://www.tmz.com/2024/10/27/adele-in-tears-seeing-celine-dion-at-vegas-residency/",
+      "urlToImage": "https://imagez.tmz.com/image/64/16by9/2024/10/27/6451964c5b514a4b8633bccef0cf405d_xl.jpg",
+      "publishedAt": "2024-10-27T12:16:00Z",
+      "content": "Adele had a tearful interlude at her Vegas residency Saturday night ... when she spotted a fan in the audience ... and that would be Celine Dion.\r\nAdele was singing \"When We Were Young\" at a packed a… [+608 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Variety"
+      },
+      "author": "Carolyn Giardina",
+      "title": "How the ‘September 5’ Filmmakers Created an Authentic Experience",
+      "description": "In “September 5,” which Paramount plans to release on Nov. 29, the tense hostage crisis at the 1972 Munich Summer Olympics unfolds with painstaking detail from the point of view of the ABC Sports team covering the games. To do this, director Tim Fehlbaum and …",
+      "url": "https://variety.com/2024/artisans/artists/september-5-authentic-experience-cinematography-production-design-1236204356/",
+      "urlToImage": "https://variety.com/wp-content/uploads/2024/11/September-5_3883.jpg?w=1000&h=563&crop=1",
+      "publishedAt": "2024-11-10T17:05:00Z",
+      "content": "In “September 5,” which Paramount plans to release on Nov. 29, the tense hostage crisis at the 1972 Munich Summer Olympics unfolds with painstaking detail from the point of view of the ABC Sports tea… [+3263 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Quartz India"
+      },
+      "author": "Bruce Gil",
+      "title": "Comcast might unload its cable networks",
+      "description": "Comcast (CMCSA) is exploring a major restructuring that could spin off its cable networks, marking another seismic shift in the streaming wars. The entertainment conglomerate is also seeking potential partnerships for its streaming platform Peacock as traditi…",
+      "url": "https://qz.com/comcast-nbc-cable-unload-1851686435",
+      "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/03dc79244fd82a28cf00733133017215.jpg",
+      "publishedAt": "2024-10-31T17:36:00Z",
+      "content": "In This Story\r\nComcast (CMCSA+2.59%\r\n) is exploring a major restructuring that could spin off its cable networks, marking another seismic shift in the streaming wars. The entertainment conglomerate i… [+1822 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Cracked.com"
+      },
+      "author": "Jesse",
+      "title": "14 Other Countries’ Most-Watched TV Broadcasts",
+      "description": "We’ll give you one guess as to who can’t get enough ‘Melodifestivalen’",
+      "url": "https://www.cracked.com/article_44096_14-other-countries-most-watched-tv-broadcasts.html",
+      "urlToImage": "https://s3.crackedcdn.com/phpimages/article/2/7/4/1172274.jpg",
+      "publishedAt": "2024-10-24T14:00:00Z",
+      "content": "Wikipedias List of Most-Watched Television Broadcasts is like a smorgasbord of unhealthy delights you didnt know existed. Youve been rotting your brain with reruns of The Office all this time, when y… [+4661 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Alastair Telfer",
+      "title": "Peaty '100%' at LA 2028 if 50m breaststroke added",
+      "description": "Three-time Olympic swimming champion Adam Peaty says it would be \"100% yes\" to the Los Angeles Games in 2028 if the 50m breaststroke is added as an event.",
+      "url": "https://www.bbc.com/sport/swimming/articles/cpw5l5ww1ewo",
+      "urlToImage": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/sport/images/metadata/poster-1024x576.png",
+      "publishedAt": "2024-10-16T11:52:12Z",
+      "content": "Three-time Olympic champion Adam Peaty says it would be a \"100% yes\" to the Los Angeles Games in 2028 if the 50m breaststroke is added as an event.\r\nPeaty, 29, was pipped to gold by 0.02 seconds in t… [+1534 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "BBC Sport",
+      "title": "Who will win the Ballon d'Or? Pundits' picks",
+      "description": "BBC Sport pundits on who deserves to win the men's and women's Ballon d'Or on Monday.",
+      "url": "https://www.bbc.com/sport/football/articles/c04p267vykdo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/b542/live/e3c9aee0-88ad-11ef-b6b0-c9af5f7f16e4.png",
+      "publishedAt": "2024-10-28T07:08:22Z",
+      "content": "Three of the four winners since the Ballon d'Or expanded to recognise female footballers in 2018 are again in contention - Bonmati (2023), Spain team-mate Alexia Putellas (2021, 2022) and Norway's Ad… [+1760 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "HYPEBEAST"
+      },
+      "author": "info@hypebeast.com (Hypebeast)",
+      "title": "Victor Wembanyama Reveals 'Star Wars'-Inspired \"Wookiee of the Year\" Nike GT Hustle 3",
+      "description": "Victor Wembanyama has debuted some new footwear ahead of the San Antonio Spurs' home opener this Saturday. Celebrating his unanimous Rookie of the Year victory for the NBA 2023-24 season, Wemby arrived to the game in a special edition Nike GT Hustle 3 \"Wookie…",
+      "url": "https://hypebeast.com/2024/10/victor-wembanyama-star-wars-inspired-nike-gt-hustle-3-wookiee-of-the-year",
+      "urlToImage": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2024%2F10%2F26%2Fvictor-wembanyama-star-wars-inspired-nike-gt-hustle-3-wookie-of-the-year-tw.jpg?w=1080&cbr=1&q=90&fit=max",
+      "publishedAt": "2024-10-27T03:02:56Z",
+      "content": "Victor Wembanyama has debuted some new footwear ahead of the San Antonio Spurs‘ home opener this Saturday. Celebrating his unanimous Rookie of the Year victory for the NBA 2023-24 season, Wemby arriv… [+1505 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deadline"
+      },
+      "author": "Dade Hayes",
+      "title": "NBCUniversal Restructures Ad Exec Ranks; Sports Vet And Olympics Chief Dan Lovinger Among Staffers Exiting",
+      "description": "Don Lavinger, who recently spearheaded NBCUniversal’s advertising bonanza at the Paris Olympics, is among a handful of employees exiting the company amid a broad restructuring of its ad exec ranks. The overhaul was announced Monday by Allison Levin, President…",
+      "url": "http://deadline.com/2024/10/nbcuniversal-restructures-ad-execs-sports-olympics-dan-lovinger-1236115753/",
+      "urlToImage": "https://deadline.com/wp-content/uploads/2024/07/Paris-Olympics-event-NBCU.jpg?w=1024",
+      "publishedAt": "2024-10-14T22:55:38Z",
+      "content": "Don Lavinger, who recently spearheaded NBCUniversal‘s advertising bonanza at the Paris Olympics, is among a handful of employees exiting the company amid a broad restructuring of its ad exec ranks.\r\n… [+5075 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deadline"
+      },
+      "author": "Dade Hayes",
+      "title": "NBCUniversal Restructures Ad Exec Ranks; Sports Vet And Olympics Chief Don Lovinger Among Staffers Exiting",
+      "description": "Don Lovinger, who recently spearheaded NBCUniversal’s advertising bonanza at the Paris Olympics, is among a handful of employees exiting the company amid a broad restructuring of its ad exec ranks. The overhaul was announced Monday by Allison Levin, President…",
+      "url": "http://deadline.com/2024/10/nbcuniversal-restructures-ad-execs-sports-olympics-don-lovinger-1236115753/",
+      "urlToImage": "https://deadline.com/wp-content/uploads/2024/07/Paris-Olympics-event-NBCU.jpg?w=1024",
+      "publishedAt": "2024-10-14T22:55:38Z",
+      "content": "Don Lovinger, who recently spearheaded NBCUniversal‘s advertising bonanza at the Paris Olympics, is among a handful of employees exiting the company amid a broad restructuring of its ad exec ranks.\r\n… [+5129 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Tim Genske, Contributor, \n Tim Genske, Contributor\n https://www.forbes.com/sites/timgenske/",
+      "title": "Paris Olympics 2024 Reprise: U.S. Women’s Soccer Coach Emma Hayes",
+      "description": "It was the end of a long drought for the U.S. team, which had not won an Olympic gold medal since 2012 in London.",
+      "url": "https://www.forbes.com/sites/timgenske/2024/11/06/paris-olympics-2024-reprise-us-womens-soccer-coach-emma-hayes/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/672b67efbbc100b873c4d746/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-11-06T13:33:44Z",
+      "content": "MARSEILLE, FRANCE - JULY 28: Emma Hayes, Head Coach of Team United States celebrates after the ... [+] team's victory during the Women's group B match between United States and Germany during the Oly… [+9039 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Search Engine Journal"
+      },
+      "author": "Tory Gray",
+      "title": "Beyond SEO: Why Search Data Is Powerful Market Intelligence Data via @sejournal, @torylynne",
+      "description": "Explore new ways to use search data. Let's talk sources, which data to pull, and how to use it to arrive at powerful insights, fast.\nThe post Beyond SEO: Why Search Data Is Powerful Market Intelligence Data appeared first on Search Engine Journal.",
+      "url": "https://www.searchenginejournal.com/beyond-seo-why-search-data-is-powerful-market-intelligence-data/528694/",
+      "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2024/10/search-data-898.jpg",
+      "publishedAt": "2024-10-22T11:00:58Z",
+      "content": "Marketers work with search data every day, but we’re greatly underutilizing its potential.\r\nLet me explain.\r\nSearch data can tell us all kinds of things about markets, audiences, behavior, and prefer… [+8638 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "Emily Chang",
+      "title": "Notable firsts that could make history on Election Day",
+      "description": "The stage is set for a historic 2024 election in congressional as well as in the White House races.",
+      "url": "https://abcnews.go.com/Politics/notable-firsts-make-history-election-day/story?id=115532002",
+      "urlToImage": "https://i.abcnewsfe.com/a/f11f1171-cfbb-415c-a9fb-5ca4b2020946/capitol-1-ap-er-241105_1730842744636_hpMain_16x9.jpg?w=1600",
+      "publishedAt": "2024-11-05T22:51:00Z",
+      "content": "The stage is set for a historic 2024 election: Vice President Kamala Harris could be the first female president and first president of South Asian descent while former President Donald Trump could be… [+4315 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "Kiara Alfonseca, Soo Rin Kim",
+      "title": "Trump spends millions on anti-trans ads despite polls showing lack of voter interest",
+      "description": "Former President Donald Trump and his Republican allies are aggressively pushing anti-trans messaging in the final stretch of the 2024 election.",
+      "url": "https://abcnews.go.com/US/trump-spends-millions-anti-trans-ads-despite-polls/story?id=115001816",
+      "urlToImage": "https://i.abcnewsfe.com/a/5e91adea-1546-489b-976d-3cd0ac586ce1/transgender-ads-03-kla-241021_1729539355142_hpMain_16x9.jpg?w=1600",
+      "publishedAt": "2024-10-21T21:47:42Z",
+      "content": "Former President Donald Trump and some of his Republican allies are aggressively pushing anti-trans messaging in the final stretch of the 2024 election, with Trump in recent months frequenting campai… [+5295 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": "Louisa Frahm",
+      "title": "NBA 101: Teams, players, facts, stats and history to know",
+      "description": "The NBA has been a treasured sporting institution for over 70 years. Learn more about notable milestones from the league's history now.",
+      "url": "https://www.espn.com/nba/story/_/id/41924909/nba-101-teams-players-facts-stats-know",
+      "urlToImage": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F1206%2Fr1103138_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-10-21T20:21:25Z",
+      "content": "Originally formed as the Basketball Association of America (BAA) in 1946, the NBA took its current name in 1949. Throughout its storied history, the league has showcased a wide array of powerful play… [+2462 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Chelsea Davis,Crystal Wall",
+      "title": "26 things you probably didn't know about 'The Great British Baking Show'",
+      "description": "From filming secrets and prizes to the application process, here are fun facts about the show, which is also known as \"The Great British Bake-Off.\"",
+      "url": "https://www.businessinsider.com/cool-things-to-know-about-the-great-british-baking-show-trivia",
+      "urlToImage": "https://i.insider.com/5f96d9c8f21803001222be3d?width=1200&format=jpeg",
+      "publishedAt": "2024-10-22T13:53:53Z",
+      "content": "\"The Great British Baking Show\" premiered in 2010.Channel 4/Love Productions\r\n\u003Cul\u003E\n\u003Cli\u003E\"The Great British Baking Show\" is actually called \"The Great British Bake Off\" in the UK.\u003C/li\u003E\n\u003Cli\u003EThe winner o… [+15569 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": "Tom Brown",
+      "title": "How will a smaller Commonwealth Games affect Team Wales?",
+      "description": "BBC Sport Wales examines what impact a slimmed-down version of the Commonwealth Games will have on Welsh athletes.",
+      "url": "https://www.bbc.com/sport/table-tennis/articles/c3dvdnedx0eo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_sport/0928/live/9a9167a0-9126-11ef-88b8-8b00cbc9d4aa.jpg",
+      "publishedAt": "2024-10-23T15:46:24Z",
+      "content": "Another triple cycling world champion - Anna Morris - credits the Commonwealth Games for giving her the platform that led to her first call-up by British Cycling.\r\nBut despite concerns the Commonweal… [+754 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Lilian Raji, Contributor, \n Lilian Raji, Contributor\n https://www.forbes.com/sites/lilianraji/",
+      "title": "10 Insights From NBC’s Paris Olympic Games Strategy: What Worked & Why",
+      "description": "Celebrity Authenticity as a Brand Driver: Snoop Dogg's success at the Olympics stems largely from his ability to remain true to his established persona.",
+      "url": "https://www.forbes.com/sites/lilianraji/2024/10/28/10-insights-from-nbcs-paris-olympic-games-strategy-what-worked--why/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/671fd9f9200754039a8f399c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-10-28T18:54:36Z",
+      "content": "NBCUNIVERSAL EVENTS \"NBCUniversal Press Tour NBC Sports' \"2024 Paris Olympics\" Panel\" Pictured: ... [+] (l-r) Molly Solomon, Executive Producer &amp; President, Olympics Production; Rowdy Gaines, Swi… [+6392 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Catherine Sabino, Contributor, \n Catherine Sabino, Contributor\n https://www.forbes.com/sites/catherinesabino/",
+      "title": "7 New Ways To Experience Italy This Fall And Winter",
+      "description": "Get a jump on the Olympics in Bormio; enjoy the Renaissance in luxury style; check out Florence's fashion museum; try a heritage food and wine train, and more.",
+      "url": "https://www.forbes.com/sites/catherinesabino/2024/10/24/7-new-ways-to-experience-italy-this-fall-and-winter/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/671982d4c872ba1e43b0b479/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-10-24T17:25:06Z",
+      "content": "The Piazza Del Duomo in Milan during a rare snowstorm. (Photo by Vittorio Zunino Celotto/Getty Images)\r\nGetty Images\r\nItaly has much to offer every season. Here are new ways to experience the country… [+11212 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Casey Murphy, Contributor, \n Casey Murphy, Contributor\n https://www.forbes.com/sites/caseymurphy/",
+      "title": "Kate Douglass Demolishes 200 Breast Record: Will She Swim In 2028?",
+      "description": "Olympic swimmer Kate Douglass just shattered another world record. Explore her college and Olympic history and see if she plans to compete at the 2028 Olympics.",
+      "url": "https://www.forbes.com/sites/caseymurphy/2024/10/31/kate-douglass-demolishes-200-breast-record-will-she-swim-in-2028/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/67238d01888442d91be3d355/0x0.jpg?format=jpg&crop=2854,1606,x0,y14,safe&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-10-31T16:36:53Z",
+      "content": "SINGAPORE, SINGAPORE - OCTOBER 31: Kate Douglass of the United States celebrates after winning and ... [+] setting a new world record in the womens 200m breaststroke final during day one of the World… [+3810 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Hugh McIntyre, Senior Contributor, \n Hugh McIntyre, Senior Contributor\n https://www.forbes.com/sites/hughmcintyre/",
+      "title": "Celine Dion’s First Single In Years Is An Instant Sales Smash",
+      "description": "Celine Dion's rendition of “Hymne A L’Amour” which she performed during the Olympics beings her back to the charts and becomes a quick sales smash in the U.K.",
+      "url": "https://www.forbes.com/sites/hughmcintyre/2024/10/15/celine-dions-first-single-in-years-is-an-instant-sales-smash/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/66442958046456b153f7dbc1/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-10-15T12:45:00Z",
+      "content": "LOS ANGELES, CALIFORNIA - FEBRUARY 04: Celine Dion speaks onstage during the 66th GRAMMY Awards at ... [+] Crypto.com Arena on February 04, 2024 in Los Angeles, California. Celine Dion's rendition of… [+2525 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Julia Stumbaugh",
+      "title": "Joel Embiid Rumors: 76ers 'Truly Believed' Star Would Play in NBA Opener amid Injury",
+      "description": "The Philadelphia 76ers \"truly believed\" Joel Embiid would be available for the team's regular-season opener on Oct. 23, according to The Athletic's Sam Amick.…",
+      "url": "https://bleacherreport.com/articles/10142293-joel-embiid-rumors-76ers-truly-believed-star-would-play-in-nba-opener-amid-injury",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1730818960/ph2vuur6xwzgucnqamzn.jpg",
+      "publishedAt": "2024-11-05T15:13:20Z",
+      "content": "Justin Casterline/Getty Images\r\nThe Philadelphia 76ers \"truly believed\" Joel Embiid would be available for the team's regular-season opener on Oct. 23, according to The Athletic's Sam Amick.\r\nEmbiid … [+1082 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deadline"
+      },
+      "author": "Greg Evans",
+      "title": "‘September 5’ Trailer Looks Back At Key Moments In Coverage Of Deadly 1972 Munich Summer Olympics",
+      "description": "Paramount has released the official trailer for September 5, the critically acclaimed drama that follows the ABC Sports TV team during the horrific events of the 1972 Munich Summer Olympics, when the Palestinian terrorist group known as Black September took t…",
+      "url": "http://deadline.com/2024/10/september-5-trailer-1236157273/",
+      "urlToImage": "https://deadline.com/wp-content/uploads/2024/10/image003-3.jpg?w=1024",
+      "publishedAt": "2024-10-24T14:24:09Z",
+      "content": "Paramount has released the official trailer for September 5, the critically acclaimed drama that follows the ABC Sports TV team during the horrific events of the 1972 Munich Summer Olympics, when the… [+1665 chars]"
+    },
+    {
+      "source": {
+        "id": "bleacher-report",
+        "name": "Bleacher Report"
+      },
+      "author": "Joseph Zucker",
+      "title": "USA's Noah Lyles Reveals Engagement to Girlfriend Junelle Bromfield in Video, Photos",
+      "description": "Track and field star Noah Lyles and fellow sprinter Junelle Bromfield announced their engagement. Lyles shared photos and video on social media from when he…",
+      "url": "https://bleacherreport.com/articles/10139343-usas-noah-lyles-reveals-engagement-to-girlfriend-junelle-bromfield-in-video-photos",
+      "urlToImage": "https://media.bleacherreport.com/image/upload/x_23,y_129,w_1776,h_1183,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1728920251/rcf985caglicpgiw0ra8.jpg",
+      "publishedAt": "2024-10-14T16:18:46Z",
+      "content": "John Nacion/Getty Images\r\nTrack and field star Noah Lyles and fellow sprinter Junelle Bromfield announced their engagement.\r\nLyles shared photos and video on social media from when he popped the ques… [+1244 chars]"
+    }
+  ]
+}
+        // const apiKey = '11d502d146eb4135a3bfd293eaed3112'; // Replace with your NewsAPI key
+        const newsContainer = document.getElementById('news-container');
+        
+        // Function to fetch Olympic news
+        async function fetchOlympicNews() {
+                // Fetch news data from the NewsAPI
+                // const response = await fetch(`https://newsapi.org/v2/everything?q=Olympics&apiKey=${apiKey}`);
+                const data = newData
+        
+                // Check if the response is successful and there are articles
+                if (data.status === 'ok' && data.articles.length > 0) {
+                    // Clear any existing content in the news container
+                    newsContainer.innerHTML = '';
+        
+                    // Loop through the articles and create HTML for each
+                    data.articles.forEach(article => {
+                        const newsCard = document.createElement('div');
+                        newsCard.classList.add('news-card');
+        
+                        // Use the image URL from the API or a fallback image if none exists
+                        const imgUrl = article.urlToImage ? article.urlToImage : 'https://via.placeholder.com/300x200?text=Olympic+News';
+        
+                        // HTML structure for each news article
+                        newsCard.innerHTML = `
+                            <img src="${imgUrl}" alt="News image">
+                            <div class="news-card-content">
+                                <h2><a href="${article.url}" target="_blank">${article.title}</a></h2>
+                                <p>${article.description ? article.description : 'No description available.'}</p>
+                            </div>
+                        `;
+        
+                        // Append the news card to the container
+                        newsContainer.appendChild(newsCard);
+                    });
+                } else {
+                    newsContainer.innerHTML = '<p>No Olympic news found at the moment. Please try again later.</p>';
+                }
+        }
+        
+        // Call the function to fetch news when the page loads
+        fetchOlympicNews();
+        
+        
+          </script>
+          <script src="./script.js"></script>
+          <script src="../BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

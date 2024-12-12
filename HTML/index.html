@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+  <!-- section home-Start -->
+  <section id="home">
+    <header class="">
+      <nav class="navbar navbar-expand-md bg fixed-top">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg"
+              alt="Olympics Logo">
+          </div>
+
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon" style="color: black;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item  ms-3">
+
+                
+                <a class="nav-link text-black " style="text-decoration: underline;" href="#home">Home</a>
+              </li>
+              
+             
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black " href="../olympics website - Copy/bsindex.html">Games</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black" href="../olympics website - Copy/athlete.html">Athelets</a>
+              </li>
+
+              <!-- <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="#athletes">Athletes</a>
+              </li> -->
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black  " href="./News.html">News</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black " href="../HTML/FAQs.html">FAQs</a>
+              </li>
+              <!-- <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="#gallery">Gallery</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#athletes">Side Map</a></li>
+                  <li><a class="dropdown-item" href="../olympics website - Copy/news.html">Gallery</a></li>
+                  
+                  <li><a class="dropdown-item" href="#about">Aboutus</a></li>
+                </ul>
+              </li>
+              <li class="nav-item  ms-5">
+                <div class="mode-button">
+                  <button class="bg-dark d-block " style="width: 43px;height: 20px; margin-top: -2px;"
+                    onclick="darkmode()" type="button"></button>
+                  <button class="bg-white d-block " style="width: 43px;height: 20px; border: 1px solid white;"
+                    onclick="lightmode()" type="button"></button>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <form class="d-flex ">
+              <input class="form-control me-2 s-input" type="text" placeholder="Search">
+              <button class="btn fas fa-search" id="s-button" onclick="showinput()" type="button"></button>
+            </form>
+
+            <button type="button" class="btn btn-primary"><a href="../olympics website - Copy/home.html" class="text-white">Sign In</a></button>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="backimage">
+      <h1 style="position: relative; top: 10px; color: black; text-align: center;">Welcome To Olympics</h1>
+      <!-- <h5 style="left: 300px; position: relative;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Debitis omnis quisquam vitae, voluptatum id, <br> ea repellat officia, ipsa nemo quo aliquid nobis incidunt perspiciatis <br> voluptates suscipit blanditiis eum sed hic!</h5> -->
+
+    </div>
+
+  </section>
+  <!-- section home-End -->
+
+  
+  <section id="games">
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="container mt-3">
+            <div class="card img-fluid" style="width:350px; height: 400px;">
+              <img class="card-img-top" src="../IMAGES/downloadhockey.jpg" alt="Card image"
+                style="width:100%; height: 100%;">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white" style="margin-left: 15px;"> </h4> <a href="#" class="btn btn-">
+                  <h2 style="color: white;">Explore>>>></h2>
+                </a>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" style="margin-top: 240px;">Hockey</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="container mt-3">
+            <div class="card img-fluid" style="width:350px; height: 400px;">
+              <img class="card-img-top" src="../IMAGES/downloadjavelin.jpg" alt="Card image"
+                style="width:100%; height: 100%;">
+              <div class="card-img-overlay text-dark">
+                <h4 class="card-title "></h4><a href="#" class="btn btn-">
+                  <h2 style="color: rgb(2, 2, 2);">Explore>>>></h2>
+                </a>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" style="margin-top: 230px;">Javelin-Trown</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="container mt-3">
+            <div class="card img-fluid" style="width:350px; height: 400px;">
+              <img class="card-img-top" src="../IMAGES/imagesbasket.jpg" alt="Card image"
+                style="width:100%; height: 100%;">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-"></h4><a href="#" class="btn btn-">
+                  <h2 style="color: rgb(255, 254, 254);">Explore>>>></h2>
+                </a>
+                <p class="card-text text-white"></p>
+                <a href="#" class="btn btn-primary text-white" style="margin-top: 230px;">Basket Ball</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="container mt-3">
+            <div class="card img-fluid" style="width:350px; height: 400px;">
+              <img class="card-img-top" src="../IMAGES/imagesswimming.jpg" alt="Card image"
+                style="width:100%; height: 100%;">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-dark" style="margin-left: 15px;"></h4><a href="#" class="btn btn-">
+                  <h2 style="color: rgb(2, 2, 2);">Explore>>>></h2>
+                </a>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" style="margin-top: 230px;">Swimming</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="container mt-3">
+            <div class="card img-fluid" style="width:350px; height: 400px;">
+              <img class="card-img-top" src="../IMAGES/imagesteer.jpg" alt="Card image"
+                style="width:100%; height: 100%;">
+              <div class="card-img-overlay text-dark">
+                <h4 class="card-title "></h4><a href="#" class="btn btn-">
+                  <h2 style="color: rgb(2, 2, 2);">Explore>>>></h2>
+                </a>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary" style="margin-top: 230px;">Shooting</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="container mt-3">
+            <div class="card img-fluid" style="width:350px; height: 400px;">
+              <img class="card-img-top" src="../IMAGES/downloadrace.jpg" alt="Card image"
+                style="width:100%; height: 100%;">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white"></h4><a href="#" class="btn btn-">
+                  <h2 style="color: rgb(2, 2, 2);">Explore>>>></h2>
+                </a>
+                <p class="card-text text-white"></p>
+                <a href="#" class="btn btn-primary text-white" style="margin-top: 230px;">Race</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 style="font-size: 60px; font-family: Ravie; text-align: center; border: 1px solid black; margin-top: 10px;">Upcoming Events</h1>
+  <div class="backimage1">
+    <!-- <img src="../IMAGES/pexels-frans-van-heerden-201846-720456.jpg" alt="" style="height: 100vh; width: 100%; margin-top: 70px;"> -->
+    <h1 style="font-size: 60px; margin: 90px; padding: 90px; position: relative; color: white; font-weight: bold;">
+      MILANO <br> CORTINA <br> 06-22Feb <br> 2026 <br> <button type="button" class="btn btn-primary "><a
+          href="https://milanocortina2026.olympics.com/en"
+          style="color: white; text-decoration: none;">Explore>>></a></button></h1>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-6 col-lg-4 ">
+        <div class="card" style="width:100%;">
+          <img class="card-img-top" src="../IMAGES/downloadhockey.jpg" alt="Card image"
+            style="width:100%; border-bottom-left-radius: 20px; height: 200px;">
+          <div class="card-body">
+            <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                <h4>By whom, where and when was Hockey invented </h4>
+              </a></h4>
+            <p class="card-text">
+            <p>There are two types of hockey – field and ice. Field hockey, played at the Olympic Summer Games, takes
+              place on an artificial-grass pitch where two teams of 11 – 10 infield players and one goalkeeper</p>
+            <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card" style="width:100%;">
+          <img class="card-img-top" src="../IMAGES/downloadjavelin.jpg" alt="Card image"
+            style="width:100%; border-bottom-left-radius: 20px;">
+          <div class="card-body">
+            <h4 class="card-title"> <a href="https://en.wikipedia.org/wiki/Javelin_throw_at_the_Olympics"
+                class="btn btn-">
+                <h4> From weapon of war to Olympic sport: A glance at javelin throw’s history</h4>
+              </a></h4>
+            <p class="card-text">
+            <p>The javelin throw has been a part of the Olympics since 1908 as a men’s event. The women’s competition
+              was added in 1932.</p>
+            <a href="https://olympics.com/en/news/javelin-throw-rules-regulations-and-all-you-need-to-know"
+              class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card" style="width:100%;">
+          <img class="card-img-top" src="../IMAGES/downloadrace.jpg" alt="Card image"
+            style="width:100%; border-bottom-left-radius: 20px;">
+          <div class="card-body">
+            <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                <h4>By whom, where and when was Hockey invented </h4>
+              </a></h4>
+            <p class="card-text">
+            <p>There are two types of hockey – field and ice. Field hockey, played at the Olympic Summer Games, takes
+              place on an artificial-grass pitch where two teams of 11 – 10 infield players and one goalkeeper</p>
+            <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card" style="width:100%;">
+          <img class="card-img-top" src="../IMAGES/imagesbasket.jpg" alt="Card image"
+            style="width:100%; border-bottom-left-radius: 20px; ">
+          <div class="card-body">
+            <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                <h4>By whom, where and when was Hockey invented </h4>
+              </a></h4>
+            <p class="card-text">
+            <p>There are two types of hockey – field and ice. Field hockey, played at the Olympic Summer Games, takes
+              place on an artificial-grass pitch where two teams of 11 – 10 infield players and one goalkeeper</p>
+            <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6  col-lg-4">
+        <div class="card" style="width:100%;">
+          <img class="card-img-top" src="../IMAGES/imagesswimming.jpg" alt="Card image"
+            style="width:100%; border-bottom-left-radius: 20px; height: 170px;">
+          <div class="card-body">
+            <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                <h4>By whom, where and when was Hockey invented </h4>
+              </a></h4>
+            <p class="card-text">
+            <p>There are two types of hockey – field and ice. Field hockey, played at the Olympic Summer Games, takes
+              place on an artificial-grass pitch where two teams of 11 – 10 infield players and one goalkeeper</p>
+            <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card" style="width:100%;">
+          <img class="card-img-top" src="../IMAGES/imagesteer.jpg" alt="Card image"
+            style="width:100%; border-bottom-left-radius: 20px;">
+          <div class="card-body">
+            <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                <h4>By whom, where and when was Hockey invented </h4>
+              </a></h4>
+            <p class="card-text">
+            <p>There are two types of hockey – field and ice. Field hockey, played at the Olympic Summer Games, takes
+              place on an artificial-grass pitch where two teams of 11 – 10 infield players and one goalkeeper</p>
+            <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <img src="../IMAGES/pexels-inspiredimages-133325.jpg" alt="" style="height: 100vh; width: 100%; margin-top: 70px;">
+  </div>
+
+
+
+
+
+
+
+
+  <!-- section Athletes-Start -->
+  <section id="athletes" class="section">
+    <div class="container mt-5">
+      <div class="row" style="left: 0px;">
+        <div class="col-sm-6 col-lg-4 col-md-6">
+          <div class="card" style="width:300px; left: 0px;">
+            <img class="card-img-top rounded-circle" src="../IMAGES/downloadhockey.jpg" alt="Card image"
+              style="width: 200px; height: 200px ; position: relative; left: 50px; top: 10px; ">
+            <div class="card-body">
+              <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                  <h4>By whom, where and when was Hockey invented </h4>
+                </a></h4>
+              <p class="card-text">
+
+                <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-md-6">
+          <div class="card" style="width:300px;">
+            <img class="card-img-top rounded-circle" src="../IMAGES/downloadjavelin.jpg" alt="Card image"
+              style="width: 200px; height: 200px ; position: relative; left: 50px; top: 10px; ">
+            <div class="card-body">
+              <h4 class="card-title"> <a href="https://en.wikipedia.org/wiki/Javelin_throw_at_the_Olympics"
+                  class="btn btn-">
+                  <h4> From weapon of war to Olympic sport: A glance at javelin throw’s history</h4>
+                </a></h4>
+              <p class="card-text">
+              <p></p>
+              <a href="https://olympics.com/en/news/javelin-throw-rules-regulations-and-all-you-need-to-know"
+                class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-md-6">
+          <div class="card" style="width:300px; left: 0px;">
+            <img class="card-img-top rounded-circle" src="../IMAGES/downloadrace.jpg" alt="Card image"
+              style="width: 200px; height: 200px ; position: relative; left: 50px; top: 10px;">
+            <div class="card-body">
+              <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                  <h4>By whom, where and when was Hockey invented </h4>
+                </a></h4>
+              <p class="card-text">
+              <p></p>
+              <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-md-6">
+          <div class="card" style="width:300px;">
+            <img class="card-img-top rounded-circle" src="../IMAGES/imagesbasket.jpg" alt="Card image"
+              style="width: 200px; height: 200px ; position: relative; left: 50px; top: 10px;  ">
+            <div class="card-body">
+              <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                  <h4>By whom, where and when was Hockey invented </h4>
+                </a></h4>
+              <p class="card-text">
+              <p>There are two types of hockey – field and ice. Field hockey, played at the Olympic Summer Games, takes
+                place on an artificial-grass pitch where two teams of 11 – 10 infield players and one goalkeeper</p>
+              <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-md-6">
+          <div class="card" style="width:300px; left: 0px;">
+            <img class="card-img-top rounded-circle" src="../IMAGES/imagesswimming.jpg" alt="Card image"
+              style="width: 200px; height: 200px ; position: relative; left: 50px; top: 10px; ">
+            <div class="card-body">
+              <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                  <h4>By whom, where and when was Hockey invented </h4>
+                </a></h4>
+              <p class="card-text">
+              <p>There are two types of hockey – field and ice. Field hockey, played at the Olympic Summer Games, takes
+                place on an artificial-grass pitch where two teams of 11 – 10 infield players and one goalkeeper</p>
+              <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-md-6">
+          <div class="card" style="width:300px;">
+            <img class="card-img-top rounded-circle" src="../IMAGES/imagesteer.jpg" alt="Card image"
+              style="width: 200px; height: 200px ; position: relative; left: 50px; top: 10px; ">
+            <div class="card-body">
+              <h4 class="card-title"> <a href="https://olympics.com/en/paris-2024/sports/hockey" class="btn btn-">
+                  <h4>By whom, where and when was Hockey invented </h4>
+                </a></h4>
+              <p class="card-text">
+              <p>There are two types of hockey – field and ice. Field hockey, played at the Olympic Summer Games, takes
+                place on an artificial-grass pitch where two teams of 11 – 10 infield players and one goalkeeper</p>
+              <a href="https://olympics.com/en/sports/hockey/" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- section Athletes-End -->
+
+  <!-- section gallery start -->
+
+ <section id="gallery" class="section">
+
+  <h1 style="text-align: center; font-size: 60px; font-family: Cooper Black; margin-top: 20px;">Best Of # Olyampic Gallery</h1>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="border: 5px solid black; margin-top: 20px; ">
+<div class="carousel-inner" >
+ <div class="carousel-item active" data-bs-interval="10000">
+   <!-- <img src="../IMAGES/downloadhockey.jpg" class="d-block w-100" alt="..."> -->
+   <!-- <div class="card text-bg-dark">
+     <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+     <div class="card-img-overlay">
+       <h5 class="card-title"></h5>
+       <p class="card-text"></p>
+       <p class="card-text"><small></small></p>
+     </div>
+   </div> -->
+   <div class="container mt-">
+     <div class="row">
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+     <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+     <div class="card-img-overlay">
+       <h5 class="card-title"></h5>
+       <p class="card-text"></p>
+       <p class="card-text"><small></small></p>
+     </div>
+   </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <video controls style="height: 260px;">
+             <source src="../ IMAGES/video\6539610-uhd_2560_1440_25fps.mp4" type="video/mp4">
+           </video>
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <video controls style="height: 260px;">
+             <source src="../ IMAGES\video\6539610-uhd_2560_1440_25fps.mp4" type="video/mp4">
+           </video>
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <video controls style="height: 260px;">
+             <source src="../ IMAGES\video\6539610-uhd_2560_1440_25fps.mp4" type="video/mp4">
+           </video>
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+   
+   
+ </div>
+ <div class="carousel-item" data-bs-interval="2000">
+   <!-- <img src="../IMAGES/downloadjavelin.jpg" class="d-block w-100" alt="..."> -->
+   <div class="container mt-">
+     <div class="row">
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+     <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+     <div class="card-img-overlay">
+       <h5 class="card-title"></h5>
+       <p class="card-text"></p>
+       <p class="card-text"><small></small></p>
+     </div>
+   </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <video controls style="height: 260px;">
+             <source src="../ IMAGES\video\6539610-uhd_2560_1440_25fps.mp4" type="video/mp4">
+           </video>
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <video controls style="height: 260px;">
+             <source src="../ IMAGES\video\6539610-uhd_2560_1440_25fps.mp4" type="video/mp4">
+           </video>
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+ </div>
+ <div class="carousel-item">
+   <!-- <img src="../IMAGES/downloadrace.jpg" class="d-block w-100" alt="..."> -->
+   <div class="container mt-">
+     <div class="row">
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+     <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+     <div class="card-img-overlay">
+       <h5 class="card-title"></h5>
+       <p class="card-text"></p>
+       <p class="card-text"><small></small></p>
+     </div>
+   </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <video controls style="height: 260px;">
+             <source src="../IMAGES/video/6539610-uhd_2560_1440_25fps.mp4" type="video/mp4">
+           </video>
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <img src="../IMAGES/downloadhockey.jpg" class="card-img" alt="...">
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="card text-bg-dark">
+           <video controls style="height: 260px;">
+             <source src="../IMAGES/video/6539610-uhd_2560_1440_25fps.mp4" type="video/mp4">
+           </video>
+           <div class="card-img-overlay">
+             <h5 class="card-title"></h5>
+             <p class="card-text"></p>
+             <p class="card-text"><small></small></p>
+           </div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+ </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+ <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+ <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+ <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+ <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+</section>
+
+
+
+
+
+
+
+   <!-- Section about-Start -->
+  <section id="about">
+    <h1 style="font-size: 60px; font-family: Ravie; text-align: center; border: 1px solid black; margin-top: 10px;">About us</h1>
+    <div class="container">
+      <h1>Our vision</h1>
+      <p>Our vision is to build a better world through sport – to inspire, by being the best that we can be. The best of
+        what we can achieve. Together.</p>
+      <p>What can sport accomplish in a complex and ever-evolving world? A lot. Sport shows us we’re all chasing the
+        same dreams — that anyone, from anywhere, can aspire to compete at the highest level. Sport can help people find
+        their confidence, their spirit, their creativity. Sport can build friendships and bridge nations. Athletes are
+        competitors, but respect each other in victory and defeat. Sport is a universal language accepted everywhere. It
+        shows us we’re not that different from each other after all.</p>
+      <h1>Our missions</h1>
+      <p>We have five missions linked to delivering our vision and reflecting our values of excellence, respect and
+        friendship:</p>
+      <ul>
+        <li>ensure the uniqueness and regular celebration of the Olympic Games</li>
+        <li>put athletes at the heart of the Olympic Movement</li>
+        <li>promote sport and the Olympic values in society, with a focus on young people</li>
+        <li>lead and support the Olympic Movement</li>
+        <li>maximise the performance of the organisation.</li>
+      </ul>
+      <h1>Our values: excellence, respect and friendship</h1>
+      <p>Our values help bring out the best in us. We strive for excellence and encourage people to do the best they
+        can. We promote respect in many different ways, respect for yourself, for the rules, for your opponents, for the
+        environment and for the public. We celebrate friendship, which is the hallmark of the Olympic Games. There is
+        more that unites than divides us.</p>
+      <h1>Our organisation</h1>
+      <p>The International Olympic Committee (IOC) is a not-for-profit, civil, non-governmental, international
+        organisation. Created on 23 June 1894, just under two years before the first Olympic Games of the modern era in
+        April 1896, the IOC is the supreme authority of the Olympic Movement. Its mission is to lead and support the
+        Olympic Movement. The IOC administration, which is composed of about 700 employees, works to maximise the
+        performance of the organisation and implements the decisions taken by the IOC Executive Board and the IOC
+        Session.</p>
+      <p>Located in Lausanne since 1915, the IOC has two Olympic centres in Lausanne: the Olympic House in Vidy to cater
+        for its administration and offer a welcoming meeting place for IOC members and the entire Olympic Movement; and
+        The Olympic Museum and Olympic Studies Centre, dedicated to general public activities in Ouchy.</p>
+      <p>As the leader of the Olympic Movement, the IOC acts as a catalyst for collaboration between all parties of the
+        Olympic family, from the National Olympic Committees (NOCs), the International Sports Federations (IFs), the
+        athletes and the Organising Committees for the Olympic Games (OCOGs) to the Worldwide Olympic Partners,
+        broadcast partners and United Nations (UN) agencies. It leads a wide range of programmes and projects. On this
+        basis, it ensures the regular celebration of the Olympic Games, supports all affiliated member organisations of
+        the Olympic Movement and strongly encourages, by appropriate means, the promotion of the Olympic values.</p>
+      <p>The IOC also has two entities in Madrid: Olympic Broadcasting Services and Olympic Channel .</p>
+      <p>Olympic Broadcasting Services (OBS) was created by the IOC in 2001 in order to serve as the host broadcast
+        organisation for all Olympic Games, Olympic Winter Games and Youth Olympic Games.</p>
+      <p>The host broadcaster is responsible for delivering the pictures and sounds of the Olympic Games to billions of
+        viewers around the world. It produces and transmits unbiased live radio and television coverage of every sport
+        from every venue</p>
+      <p>Headquartered in Madrid, Spain, the OBS team includes more than 160 full-time employees from more than 30
+        different countries.</p>
+
+
+
+
+
+
+
+     
+    </div>
+  </section>
+
+
+  <!-- footer start -->
+  <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+
+    <div class="container text-center text-md-left">
+
+      <div class="row text-center text-md-left">
+
+        <div class="col-md-3 col-lg-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company Name</h5>
+          <div class="m-auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg"
+             width="150" height="100" alt="Olympics Logo">
+            </div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Explore</h5>
+          <p><a href="#athletes" class="text-white" style="text-decoration: none;">Athletes</a></p>
+          <p><a href="#games" class="text-white" style="text-decoration: none; ">Olympic Games</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">Olympic Movement</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">TOP</a></p>
+
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Media</h5>
+          <p><a href="#news" class="text-white" style="text-decoration: none;">News</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">Statements</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">Subscribe to press <br>releases</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Information</h5>
+          <p><a href="" class="text-white" style="text-decoration: none;">FAQs</a></p>
+          <p><a href="" class="text-white" style="text-decoration: none;">Documents</a></p>
+          <p><a href="#about" class="text-white" style="text-decoration: none;">About us</a></p>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right d-flex">
+
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="../BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
