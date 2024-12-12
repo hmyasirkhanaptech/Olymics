@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athletes</title>
+    <link rel="stylesheet" href="CSS CODES/athlete.css" />
+    <link      rel="stylesheet"      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+      <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../CSS/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+  </head>
+  <body>
+    <header class="">
+      <nav class="navbar navbar-expand-md bg fixed-top">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg"
+              alt="Olympics Logo">
+          </div>
+
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon" style="color: black;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item  ms-3">
+
+                
+                <a class="nav-link text-black " style="text-decoration: underline;" href="../HTML/index.html">Home</a>
+              </li>
+              
+             
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black " href="../olympics website - Copy/bsindex.html">Games</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black" href="../olympics website - Copy/athlete.html">Athelets</a>
+              </li>
+
+              <!-- <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="#athletes">Athletes</a>
+              </li> -->
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black  " href="./News.html">News</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black " href="../HTML/FAQs.html">FAQs</a>
+              </li>
+              <!-- <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="#gallery">Gallery</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#athletes">Side Map</a></li>
+                  <li><a class="dropdown-item" href="../olympics website - Copy/news.html">Gallery</a></li>
+                  
+                  <li><a class="dropdown-item" href="#about">Aboutus</a></li>
+                </ul>
+              </li>
+              <li class="nav-item  ms-5">
+                <div class="mode-button">
+                  <button class="bg-dark d-block " style="width: 43px;height: 20px; margin-top: -2px;"
+                    onclick="darkmode()" type="button"></button>
+                  <button class="bg-white d-block " style="width: 43px;height: 20px; border: 1px solid white;"
+                    onclick="lightmode()" type="button"></button>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <form class="d-flex ">
+              <input class="form-control me-2 s-input" type="text" placeholder="Search">
+              <button class="btn fas fa-search" id="s-button" onclick="showinput()" type="button"></button>
+            </form>
+
+            <button type="button" class="btn btn-primary"><a href="" class="text-white">Sign In</a></button>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h1 class="title">ATHLETES</h1>
+      <div class="search-box">
+        <input type="text" placeholder="Search for an athlete" />
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <section class="athletes">
+        <div class="athlete-card">
+          <a href="sean.html">
+            <img
+            src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/v1624622322/primary/ytyn81ej8wbxemc0sj5h"
+            alt="Sean McColl" />
+          </a>
+          <h3>SEAN MCCOLL</h3>
+          <p>CAN, SPORT CLIMBING</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+          <a href="yazuru.html">
+            <img
+            src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/cejxbt2dx61ek4h0vnpg"
+            alt="Yuzuru Hanyu" />
+          </a>
+          <h3>YUZURU HANYU</h3>
+          <p>JPN, FIGURE SKATING</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="cocco.html">
+          <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/dmlz3iti2v60n27qqvpp "
+          alt="Yuzuru Hanyu" />
+         </a>
+          <h3>Coco GAUFF</h3>
+            <p>USA, Tennis</p>
+
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+       <a href="marcus.html"> <div class="athlete-card">
+        <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/v1698927280/primary/puhg8m8mbz3y0yfyd7k1"
+          alt="Yuzuru Hanyu" /></a>
+        
+          <h3>Marcus D'ALMEIDA</h3>
+            <p>BRA, Archery</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+        <a href="yuto.html">  <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/m49yyxrteswjrivf7pkn"
+          alt="Yuzuru Hanyu" /></a>
+          <h3>Yuto HORIGOME </h3>
+           <p> JPN, Skateboard</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="rassa.html"> <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/y2edg4qpoovssmamrvux"
+          alt="Yuzuru Hanyu" /></a>
+          <h3>Rayssa LEAL</h3>
+            <p>BRA, Skateboard</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+          <a href="Katie.html">
+            <img
+            src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/hyxt20b6mgrfrkm2tc3y"
+            alt="Yuzuru Hanyu" />
+          </a>
+          <h3>Katie LEDECKY</h3>
+            <p>USA, Swimming</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+          <a href="https://olympics.com/en/athletes/kristof-milak"><img
+            src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/sqevduppqpo1vt9egdxy"
+            alt="Yuzuru Hanyu" /></a>
+          <h3>Kristof MILAK</h3>
+           <p> HUN, Swimming</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+      </section>
+      <section class="athletes">
+        <div class="athlete-card">
+<a href="https://olympics.com/en/athletes/kaylee-mckeown">          <img
+  src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/gafv7kpfq6tz39igtqj2"
+  alt="Sean McColl" /></a>
+          <h3>Kaylee MCKEOWN</h3>
+            <p>AUS, Swimming</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+        <a href="https://olympics.com/en/athletes/caeleb-dressel">  <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/dhltyvnktsl8uftdidho"
+          alt="Yuzuru Hanyu" /></a>
+          <h3>Caeleb DRESSEL</h3>
+          <p> USA, Swimming</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+          <a href="https://olympics.com/en/athletes/flora-duffy"><img
+            src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/v1655913118/primary/aopkmtbyyc7fbhoh6gzz"
+            alt="Yuzuru Hanyu" /></a>
+           <h3>Flora DUFFY</h3>
+          <p>BER, Triathlon</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="https://olympics.com/en/athletes/neeraj-chopra"> <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/evn0gkcvvi7mfildsznk"
+          alt="Yuzuru Hanyu" /></a>
+       <h3>Neeraj CHOPRA</h3>
+          <p>  IND, Athletics</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="https://olympics.com/en/athletes/armand-duplantis"> <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/uqdjr3ugto5rqnazcyyw"
+          alt="Yuzuru Hanyu" /></a>
+            <h3>Armand DUPLANTIS</h3>
+            <p>SWE, Athletics</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="https://olympics.com/en/athletes/yaroslava-mahuchikh"> <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/cp2lxxqnw5dlcw7vgxkv"
+          alt="Yuzuru Hanyu" /></a>
+            <h3>Yaroslava MAHUCHIKH
+              <p> UKR, Athletics</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+          <a href="https://olympics.com/en/athletes/shelly-ann-fraser-pryce"><img
+            src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/zywqojcglbnzsvulk5zn"
+            alt="Yuzuru Hanyu" /></a>
+            <h3>Shelly-Ann FRASER-PRYCE </h3>
+              <p>JAM, Athletics</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="https://olympics.com/en/athletes/v-sindhu-pusarla"> <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/ravhqy073xqoc25izxle"
+          alt="Yuzuru Hanyu" ></a>
+        <h3>P. V. Sindhu</h3>
+          <p>IND, Badminton</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+      </section>
+      <section class="athletes">
+        <div class="athlete-card">
+         <a href="https://olympics.com/en/athletes/alaa-maso">    <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/r3gojlltlbeeyzni8cfi"
+          alt="Sean McColl" /></a>
+          <h3>Alaa MASO</h3>
+           <p>EOR, Swimming</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+      
+        <div class="athlete-card">
+        <a href="https://olympics.com/en/athletes/serena-williams">
+          <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/vhfr6hduzmldcu4dhgre"
+          alt="Yuzuru Hanyu" /></a>
+        <h3>Serena WILLIAMS</h3>
+          <p>USA, Tennis</p>
+        </a>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+        <a href="https://olympics.com/en/athletes/elin-rubensson">  <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/bxcutsu799ls7t2mcdwl"
+          alt="Yuzuru Hanyu" /></a>
+        <h3>Elin RUBENSSON</h3>
+          <p>SWE, Football</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+       <a href="https://olympics.com/en/athletes/filipe-toledo">   <img
+        src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/v1701265677/primary/xdejkrdapy3fitgm3ang"
+        alt="Yuzuru Hanyu" /></a>
+      <h3>Filipe TOLEDO</h3>
+       <p> BRA, Surfing</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="https://olympics.com/en/athletes/carissa-moore"> <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/ync1ytpmcucn4z4zkja1"
+          alt="Yuzuru Hanyu" /></a>
+            <h3>Carissa MOORE
+          <p> USA, Surfing</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+          <a href="https://olympics.com/en/athletes/carlos-edriel-yulo">
+            <img
+            src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/vvk4eyymfydi27phgjco"
+            alt="Yuzuru Hanyu" />
+          </a>
+            <h3>Carlos YULO</h3>
+              <p>PHI, Artistic Gy</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="https://olympics.com/en/athletes/yulimar-rojas">
+          <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/kpsnnxitorrhoqalvsxs"
+          alt="Yuzuru Hanyu" />
+         </a>
+          <h3>Yulimar ROJAS</h3>
+           <p> VEN, Athletics</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="athlete-card">
+         <a href="https://olympics.com/en/athletes/winfred-mutile-yavi">
+          <img
+          src="https://img.olympics.com/images/image/private/t_1-1_600/f_auto/primary/thyuiaiyztur5e0iljjy "
+          alt="Yuzuru Hanyu" />
+         </a>
+          <h3>Winfred YAVI</h3>
+            <p>BRN, Athletics</p>
+          <button class="like-button"><i class="far fa-heart"></i></button>
+        </div>
+      </section>
+
+      <div class="slider-container">
+        <header class="section-header">
+          <div class="header-text">
+            <h1>You may like</h1>
+          </div>
+          <div class="navigation-btns">
+            <i class="fas fa-arrow-left" id="prev_btn"></i>
+            <i class="fas fa-arrow-right" id="next_btn"></i>
+          </div>
+        </header>
+        <div class="slider">
+          <div class="slider-item">
+            <img
+              src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/v1731330963/primary/pxahfbaydvtfnnenms5a" />
+            <div class="overlay">
+              <button class="btn explore-now-btn"><a href="https://olympics.com/en/news/nba-rookie-power-rankings-2024-25?uxreference=seealso" style="color:white;">Explore Now</a></button>
+              <div class="destination-desc">
+                <h3>Basktball</h3>
+                <p>
+                  <i ></i>NBA rookie power rankings 2024-25
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img
+              src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/xgpqobg2ugdtye1wzxp0" />
+            <div class="overlay">
+              <button class="btn explore-now-btn"> <a href="https://olympics.com/en/news/top-facts-dutch-speed-skater-jutta-leerdam?uxreference=seealso" style="color: white;">Explore Now</a></button>
+              <div class="destination-desc">
+                <h3>Jutta Leerdam</h3>
+                <p>
+                  <i ></i>Jutta Leerdam: Top facts you did not know about the Dutch star speed skater 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img
+              src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/othorsnvvo0qxpcohoqk" />
+            <div class="overlay">
+              <button class="btn explore-now-btn"> <a href="https://olympics.com/en/news/womens-ice-hockey-usa-canada-rivalry-series-2024-milano-cortina?uxreference=seealso" style="color: white;">Explore Now</a></button>
+              <div class="destination-desc">
+                <h3>Ice Hockey</h3>
+                <p>
+                  <i ></i>Women’s Ice Hockey: USA and Canada enter Rivalry Series ahead of Milano Cortina 2026
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img
+              src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/hretgnd2sixykw3jxovy" />
+            <div class="overlay">
+              <button class="btn explore-now-btn"> <a href="https://olympics.com/en/sport-events/paris-2024" style="color: white;">Explore Now</a></button>
+              <div class="destination-desc">
+                <h3>Urban Vibe Marathon</h3>
+                <p>
+                  <i ></i>WATCH: Paris Urban Vibe - Marathon | 16th 17th November
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img
+              src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/yshenhvrzrdk2zrnbeil" />
+            <div class="overlay">
+              <button class="btn explore-now-btn" > <a href="https://olympics.com/en/sport-events/2024-isu-figure-skating-grand-prix-finland-trophy-helsinki" style="color: white;">Explore Now</a></button>
+              <div class="destination-desc">
+                <h3>Figure Skating</h3>
+                <p>
+                  <i></i>2024 ISU Figure Skating Grand Prix Finlandia Trophy - Helsinki - Finland
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img
+              src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/vutqhtibe6hio4d0vbei" />
+            <div class="overlay">
+              <button class="btn explore-now-btn"><a href="https://olympics.com/en/sport-events/2024-wcf-curling-european-championships-lohja" style="color: white;">Explore Now</a></button>
+              <div class="destination-desc">
+                <h3>Curling</h3>
+                <p>
+                  <i></i>2024 WCF Curling European Championships - Lohja - Finland
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img
+              src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/tckhugtec2iwwin981ss" />
+            <div class="overlay">
+              <button class="btn explore-now-btn"><a href="https://olympics.com/en/news/isu-grand-prix-of-figure-skating-2024-25-all-results-and-standings-complete-list?uxreference=seealso" style="color: white;">Explore Now</a></button>
+              <div class="destination-desc">
+                <h3>Figure Skating</h3>
+                <p>
+                  <i ></i>ISU Grand Prix of Figure Skating 2024-25: All results and standings - complete list
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+              <div class="slider-item">
+                <img
+                  src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/git9umffjthuosckx6g0" />
+                <div class="overlay">
+                  <button class="btn explore-now-btn"><a href="https://olympics.com/en/news/isu-grand-prix-of-figure-skating-2024-25-all-results-and-standings-complete-list?uxreference=seealso" style="color: white;">Explore Now</a></button>
+                  <div class="destination-desc">
+                    <h3>Figure Skating</h3>
+                    <p>
+                      <i ></i>Figure skater from the desert, New York financier.
+                    </p>
+                  </div>
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br><hr>
+    
+
+    <script type="text/javascript" src="scripts/slider_script.js"></script>
+    <script>
+      document.querySelectorAll(".like-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const icon = button.querySelector("i");
+          icon.classList.toggle("far");
+          icon.classList.toggle("fas");
+          icon.classList.toggle("liked");
+        });
+      });
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="../HTML/script.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

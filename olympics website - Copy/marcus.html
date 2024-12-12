@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .top-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 300px;
+      left: 1200px;
+      height: 250px;
+    }
+    .center-bottom {
+      position: absolute;
+      top: 350px;
+      bottom:200px;
+      left: 70%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 1200px;
+    }
+    .results-header {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+    .more-results {
+      float: right;
+      font-size: 1rem;
+    }
+    .results-table th, .results-table td {
+      vertical-align: middle;
+    }
+    .header-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .olympic-section {
+            position: relative;
+            
+            top: 260px;
+            right: 600px;
+            margin-top: 2rem;
+        }
+        .team-flag {
+            width: 40px;
+            height: 30px;
+            object-fit: cover;
+        }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://gstatic.olympics.com/s1/t_s_pog_flag/f_auto/static/flag/4x3/br" style="position: relative; top:210px ; position: relative; left:37%;">
+    <h1 style="position: relative; left: 190px; font-size: 80px; top:40px; color: black;" >
+        <b>Marcus D'ALMEIDA <br>
+    
+            Brazil
+        </b>
+    </h1> </div>
+        
+  
+  <img src="https://img.olympics.com/images/image/private/t_1-1_300/f_auto/v1698927280/primary/puhg8m8mbz3y0yfyd7k1" class="img-circle" alt="Cinque Terre" width="304" height="296" style="position: relative; top: -160px;"> 
+ <img src="https://gstatic.olympics.com/s1/t_s_athlete_medal/f_auto/static/dark/pictograms/2022/arc.svg" width="64" height="66"  style="position: relative; left: 30%; top: -170px;"> <h3 style="position: relative; left: 47%; top: -270px;">Sport Climbing</h3>
+ <div class="container">
+    <div class="card top-right p-3 shadow" style="font-size: x-large;">
+      <div class="mb-3">
+        <h6 class="mb-1" style="font-size: large;">Games Participations</h6>
+        <p class="mb-0">2</p>
+      </div>
+      
+      <div class="mb-3">
+        <h6 class="mb-1" style="font-size: large;">First Olympic Games</h6>
+        <p class="mb-0"><strong>Rio 2016</strong></p>
+      </div>
+      
+      <div class="mb-3">
+        <h6 class="mb-1"style="font-size: large;">Year of Birth</h6>
+        <p class="mb-0">1998</p>
+      </div>
+      <div>
+      
+        <div class="olympic-section">
+            <div><h1 style="font-size: 70px;">Olympic <br>Results</h1></div>
+            <h4><img src="https://img.olympics.com/images/image/private/t_1-1_300/f_auto/v1552235080/primary/jux5g5vrxv5fnglq93yj" alt="Tokyo 2020" width="30"> Tokyo 2020</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Result</th>
+                        <th>Sport</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="BRA" class="team-flag"> BRA</td>
+                        <td># =9</td>
+                        <td>Archery</td>
+                        <td>Men's Individual</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="BRA" class="team-flag"> BRA</td>
+                        <td># 20</td>
+                        <td>Archery</td>
+                        <td>Mixed Team</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="olympic-section">
+            <h4><img src="https://img.olympics.com/images/image/private/t_1-1_300/f_auto/primary/fzntd3nnabdno6x16pns" alt="Rio 2016"  height="30"> Rio 2016</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Result</th>
+                        <th>Sport</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="BRA" class="team-flag"> BRA</td>
+                        <td># =33</td>
+                        <td>Archery</td>
+                        <td>Individual</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="BRA" class="team-flag"> BRA</td>
+                        <td># =9</td>
+                        <td>Archery</td>
+                        <td>Team</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+      </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badminton News</title>
+    <link rel="stylesheet" href="CSS CODES/news.css" />
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../CSS/style.css">
+  </head>
+  <body>
+    <header class="">
+      <nav class="navbar navbar-expand-md bg fixed-top">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Olympic_rings_without_rims.svg"
+              alt="Olympics Logo">
+          </div>
+
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon" style="color: black;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item  ms-3">
+
+                
+                <a class="nav-link text-black " style="text-decoration: underline;" href="#home">Home</a>
+              </li>
+              
+             
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black " href="../olympics website - Copy/bsindex.html">Games</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black" href="../olympics website - Copy/athlete.html">Athelets</a>
+              </li>
+
+              <!-- <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="#athletes">Athletes</a>
+              </li> -->
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black  " href="./News.html">News</a>
+              </li>
+              <li class="nav-item  ms-3">
+                <a class="nav-link text-black " href="../HTML/FAQs.html">FAQs</a>
+              </li>
+              <!-- <li class="nav-item  ms-3">
+                <a class="nav-link text-black d-none d-md-block " href="#gallery">Gallery</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#athletes">Side Map</a></li>
+                  <li><a class="dropdown-item" href="../olympics website - Copy/news.html">Gallery</a></li>
+                  
+                  <li><a class="dropdown-item" href="#about">Aboutus</a></li>
+                </ul>
+              </li>
+              <li class="nav-item  ms-5">
+                <div class="mode-button">
+                  <button class="bg-dark d-block " style="width: 43px;height: 20px; margin-top: -2px;"
+                    onclick="darkmode()" type="button"></button>
+                  <button class="bg-white d-block " style="width: 43px;height: 20px; border: 1px solid white;"
+                    onclick="lightmode()" type="button"></button>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <form class="d-flex ">
+              <input class="form-control me-2 s-input" type="text" placeholder="Search">
+              <button class="btn fas fa-search" id="s-button" onclick="showinput()" type="button"></button>
+            </form>
+
+            <button type="button" class="btn btn-primary"><a href="" class="text-white">Sign In</a></button>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="news-item large">
+      <a href="https://olympics.com/en/news/william-dandjinou-canada-rising-star-short-track-speed-skating">
+        <img
+        src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/v5mhahdpdusnkjrkntrn"
+        alt="PV Sindhu"
+        class="news-img" />
+      </a>
+        <div class="news-content">
+          <p class="category">Badminton</p>
+          <h2 class="title">
+            William Dandjinou: Canada’s rising short track speed
+          </h2>
+        </div>
+      </div>
+
+      <div class="news-item small">
+      <a href="https://olympics.com/en/news/yoshida-hana-triple-axel-rising-japanese-star-asada-mao">
+        <img
+        src="https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/w5dfsgz73a4fcpqnsoiw"
+        alt="Lee Zii Jia"
+        class="news-img" />
+
+      </a>
+        <div class="news-content">
+          <p class="category">Badminton</p>
+          <h2 class="title">
+            Yoshida Hana has the triple Axel. Now the rising Japanese star seeks "a program that only I can skate"
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card-item">
+       <a href="https://olympics.com/en/news/kumamoto-masters-japan-2024-lee-zii-jia-comes-from-behind-to-reach-quarter-finals">
+        <img
+        src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/yz6yofpvgcwujwtzc43v"
+        alt="Curling"
+        class="card-img" />
+       </a>
+        <div class="card-content">
+          <p class="card-category">Curling</p>
+          <h2 class="card-title">
+            Kumamoto Masters Japan 2024: Lee Zii Jia comes from behind to reach quarter-finals
+
+          </h2>
+          <p class="card-details">Curling | European Championships | Lohja</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+       <a href="https://olympics.com/en/news/kumamoto-masters-japan-2024-badminton-day-3-pv-sindhu-india-report">
+        <img
+        src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/oazeihdnrhcpclvhdn2n"
+        alt="Loh Kean Yew"
+        class="card-img" />
+       </a>
+        <div class="card-content">
+          <p class="card-category">LOH Kean Yew</p>
+          <h2 class="card-title">
+            Kumamoto Masters Japan 2024 badminton: PV Sindhu’s loss in pre-quarters ends India’s campaig
+          </h2>
+          <p class="card-details">Badminton | Kumamoto Masters Japan</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+       <a href="https://olympics.com/en/news/atp-finals-2024-schedule-scores-results-brackets">
+        <img
+        src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/q95xpmde7i07elmpvcqp"
+        alt="Jutta Leerdam"
+        class="card-img" />
+       </a>
+        <div class="card-content">
+          <p class="card-category">Jutta LEERDAM</p>
+          <h2 class="card-title">
+            Tennis: ATP Finals 2024 - full schedule, all results, scores, standings, and how to watch live
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-title">VIDEOS</div>
+    <div class="card-container">
+      <div class="card-item">
+     <a href="https://olympics.com/en/video/india-south-korea-women-asian-champions-hockey-highlights">   <img
+      src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/xmlqimpeiuoejkltvl55"
+      alt="Curling"
+      class="card-img" /></a>
+        <div class="card-content">
+          <p class="card-category">Curling</p>
+          <h2 class="card-title">
+            2024 European Curling Championships: All results
+          </h2>
+          <p class="card-details">Cu
+            India v South Korea | Women's Asian Champions Trophy 2024 | Hockey Highlights</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+      <a href="https://olympics.com/en/video/china-malaysia-women-asian-champions-hockey-highlights">
+        <img
+        src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/xbl0yigqjxmt3dn0feho"
+        alt="Loh Kean Yew"
+        class="card-img" />
+      </a>
+        <div class="card-content">
+          <p class="card-category">LOH Kean Yew</p>
+          <h2 class="card-title">
+            Kumamoto Masters Japan 2024: Loh Kean Yew exits in first round again
+          </h2>
+          <p class="card-details">  
+            China v Malaysia | Women's Asian Champions Trophy 2024 | Hockey Highlights</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+    <a href="https://olympics.com/en/paris-2024/videos/exclusive-julien-alfred-on-her-quest-to-be-the-best">
+      <img
+      src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/vyvxdbzrpqxinu0wd8bx"
+      alt="Jutta Leerdam"
+      class="card-img" />
+    </a>
+        <div class="card-content">
+          <p class="card-category">Jutta LEERDAM</p>
+          <h2 class="card-title">
+            Exclusive! Julien Alfred on her quest to be the best
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-title">Spotlight: Artistic Gymnastics</div>
+    <div class="card-container">
+      <div class="card-item">
+     <a href="https://olympics.com/en/news/gymnastics-jessica-gadirova-acl-tear-tough-long-journey-paris-2024">
+      
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/qi9ltnujbraolveo0vbg"
+          alt="Curling"
+          class="card-img" />
+     </a>
+        <div class="card-content">
+          <p class="card-category">Curling</p>
+          <h2 class="card-title">
+            2024 European Curling Championships: All results
+          </h2>
+          <p class="card-details">Curling | European Championships | Lohja</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+      <a href="https://olympics.com/en/news/jordan-chiles-on-ongoing-appeal-against-losing-medal-i-can-only-control-what-my-truth-is">
+        <img
+        src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/vhjm4tdauamekbhh1grv"
+        alt="Loh Kean Yew"
+        class="card-img" />
+      </a>
+        <div class="card-content">
+          <p class="card-category">LOH Kean Yew</p>
+          <h2 class="card-title">
+            Kumamoto Masters Japan 2024: Loh Kean Yew exits in first round again
+          </h2>
+          <p class="card-details">Badminton | Kumamoto Masters Japan</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+       <a href="https://olympics.com/en/news/this-week-in-olympic-history-11-17-november">
+        <img
+        src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/kwqnqceetbw2vubwmqsc"
+        alt="Jutta Leerdam"
+        class="card-img" />
+       </a>
+        <div class="card-content">
+          <p class="card-category">Jutta LEERDAM</p>
+          <h2 class="card-title">
+            Top facts you did not know about Dutch speed skater Jutta Leerdam
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-title">Spotlight: Figure Skating</div>
+    <div class="card-container">
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/y3p8egbl4dwainabekye"
+          alt="Curling"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">Curling</p>
+          <h2 class="card-title">
+            2024 European Curling Championships: All results
+          </h2>
+          <p class="card-details">Curling | European Championships | Lohja</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/p910hnslwzlj3goug6pm"
+          alt="Loh Kean Yew"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">LOH Kean Yew</p>
+          <h2 class="card-title">
+            Kumamoto Masters Japan 2024: Loh Kean Yew exits in first round again
+          </h2>
+          <p class="card-details">Badminton | Kumamoto Masters Japan</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/yshenhvrzrdk2zrnbeil"
+          alt="Jutta Leerdam"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">Jutta LEERDAM</p>
+          <h2 class="card-title">
+            Top facts you did not know about Dutch speed skater Jutta Leerdam
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-title">Spotlight: Olympic India</div>
+    <div class="card-container">
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/dcbklxtlsxvsn5ph1vmz"
+          alt="Curling"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">Curling</p>
+          <h2 class="card-title">
+            2024 European Curling Championships: All results
+          </h2>
+          <p class="card-details">Curling | European Championships | Lohja</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/lmvs3koqlfegmcbe0qsd"
+          alt="Loh Kean Yew"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">LOH Kean Yew</p>
+          <h2 class="card-title">
+            Kumamoto Masters Japan 2024: Loh Kean Yew exits in first round again
+          </h2>
+          <p class="card-details">Badminton | Kumamoto Masters Japan</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/jpjmgs1xc9udfscoxupe"
+          alt="Jutta Leerdam"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">Jutta LEERDAM</p>
+          <h2 class="card-title">
+            Top facts you did not know about Dutch speed skater Jutta Leerdam
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-title">Podcast Episodes</div>
+    <div class="card-container">
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/bawxfirfzoyk6omrnuxe"
+          alt="Curling"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">Curling</p>
+          <h2 class="card-title">
+            2024 European Curling Championships: All results
+          </h2>
+          <p class="card-details">Curling | European Championships | Lohja</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/dodnkfjl6ufmzxi5gpt1"
+          alt="Loh Kean Yew"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">LOH Kean Yew</p>
+          <h2 class="card-title">
+            Kumamoto Masters Japan 2024: Loh Kean Yew exits in first round again
+          </h2>
+          <p class="card-details">Badminton | Kumamoto Masters Japan</p>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <img
+          src="https://img.olympics.com/images/image/private/t_16-9_380/f_auto/primary/e91db2xr0ax5xg4xjgtk"
+          alt="Jutta Leerdam"
+          class="card-img" />
+        <div class="card-content">
+          <p class="card-category">Jutta LEERDAM</p>
+          <h2 class="card-title">
+            Top facts you did not know about Dutch speed skater Jutta Leerdam
+          </h2>
+        </div>
+      </div>
+    </div>
+<hr><br>
+   
+
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="../HTML/script.js"></script>
+    <script src="../BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
